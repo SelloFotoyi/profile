@@ -5,7 +5,7 @@ body{
     text-align:center;
     display: grid;
   /*  grid-gap: 5px;*/
-    grid-template-rows: 1fr 0.3fr 5px 7fr 5px 1fr;
+    grid-template-rows: 3fr 0.5fr 5px 7fr 5px 125px;
     grid-template-columns: 4fr;
     grid-template-areas:
         "header"
@@ -34,7 +34,7 @@ nav{
 article{
     grid-area:article;
     background-color:aqua;
-    margin: 5px;
+    margin: 25px;
 }
 footer{
     grid-area:footer;
@@ -42,17 +42,28 @@ footer{
     margin: 5px 5px 0;
 }
 
-/*@media screen and (max-width:750px){
+#socials{
+    display: flex;
+    justify-content: center;
+}
+#socials div a img{
+    width:20px;
+    height:20px;
+    margin: 5px;
+}
+
+@media screen and (max-width:750px){
     body{
-        grid-template-rows: 1fr 0.4px 8fr 0.5fr;
+        grid-template-rows: 1fr 5px 8fr 5px 0.5fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "header"
-                "nav"
+                "."
                 "article"
+                "."
                 "footer";
     }
     nav{
         display: none;
     }
-}*/
+}
