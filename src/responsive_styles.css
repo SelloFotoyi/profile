@@ -5,23 +5,49 @@ body{
     background:-webkit-linear-gradient(left,rgb(184,184,184),rgb(99,99,99));
     display: grid;
   /*  grid-gap: 5px;*/
-    grid-template-rows: 0.2fr 3fr 5px 7fr 5px 125px;
-    grid-template-columns: 4fr;
+    grid-template-rows: 0.5fr 2fr 5px 7fr 125px;
+    grid-template-columns: 5fr;
     grid-template-areas:
         "nav"
         "header"
         "."
         "article"
-        "."
         "footer";
 }
 header{
     grid-area:header;
-    background-color:blue;
+    background: url("code_bg.jpg") no-repeat;
+    background-size:cover;
     margin-top:5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header div img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+header div{
+    margin: 5%;
+}
+header div:first-child{
+    text-align: center;
+    margin: 1%;
+
+}
+header div:last-child{
+    background-color: lightgrey;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right:15%;
 }
 nav{
     grid-area:nav;
@@ -50,6 +76,14 @@ nav div a{
     color:lightgrey;
     text-decoration: none;
     font-size: large;
+}
+nav div:first-child a{
+    border: 0;
+    font-weight: bolder;
+}
+
+nav div:first-child a:hover{
+    background-color: rgb(71,71,71);
 }
 nav div a:hover{
     background-color: lightgrey;
@@ -81,12 +115,12 @@ nav div a:hover{
 }
 #sideNav div:first-child a{
     position: relative;
-    right: -92%;
+    right: -93%;
     font-size: 15pt;
 }
 #openSideNav{
     position: fixed;
-    top: 0;
+    top: 0.5%;
     right: 2%;
     visibility: hidden;
 }
@@ -126,15 +160,24 @@ footer{
 
 @media screen and (max-width:750px){
     body{
-        grid-template-rows: 0.3fr 1fr 5px 8fr 5px 0.5fr;
-        grid-template-columns:6fr;
+        grid-template-rows: 0.3fr 0.7fr 5px 6fr 0.5fr;
+        grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
                 "header"
                 "."
                 "article"
-                "."
                 "footer";
+    }
+    header div img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+    }
+    .articleSubSection{
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     nav div{
         display: none;

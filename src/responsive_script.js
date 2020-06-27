@@ -1,5 +1,4 @@
 $(function() {
-    $("header").css({"background-color": "red", "color": "black"});
     $("#twitterIcon").mouseenter(function () {
 
         $("#twitterIcon").attr("src", "src/twitter_blue.png");
@@ -39,12 +38,12 @@ $(function() {
     });
 
     $("#openSideNav").on("click",function () {
-       $("#openSideNav").fadeOut(2000);
+       $("#openSideNav").hide();
        $("#sideNav").css("visibility","visible");
     });
 
     $("#navX").on("click", function () {
         $("#sideNav").css("visibility","hidden");
-        $("#openSideNav").fadeIn(2000);
+        $("#openSideNav").show();
     });
 });
