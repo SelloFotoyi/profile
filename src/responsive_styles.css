@@ -5,11 +5,11 @@ body{
     background:linear-gradient(white,lightslategrey);
     display: grid;
   /*  grid-gap: 5px;*/
-    grid-template-rows: 3fr 0.5fr 5px 7fr 5px 125px;
+    grid-template-rows: 0.2fr 3fr 5px 7fr 5px 125px;
     grid-template-columns: 4fr;
     grid-template-areas:
-        "header"
         "nav"
+        "header"
         "."
         "article"
         "."
@@ -25,12 +25,34 @@ header{
 }
 nav{
     grid-area:nav;
-    background-color:pink;
+    background-color:rgb(71,71,71);
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 50px;
     display: flex;
-    margin-top:0;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 0;
+    justify-content: space-around;
+
+}
+nav div:first-child{
+    margin-right: auto;
+}
+nav div{
+
+margin-top: 13px;
+
+}
+nav div a{
+    padding: 5px;
+    margin: 5px;
+    border: 0.2px solid lightgray;
+    color:lightgrey;
+    text-decoration: none;
+    font-size: large;
+}
+nav div a:hover{
+    background-color: lightgrey;
+    color: black;
 }
 article{
     grid-area:article;
