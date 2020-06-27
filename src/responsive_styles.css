@@ -32,6 +32,7 @@ nav{
     height: 50px;
     display: flex;
     justify-content: space-around;
+    z-index: 0;
 
 }
 nav div:first-child{
@@ -53,6 +54,41 @@ nav div a{
 nav div a:hover{
     background-color: lightgrey;
     color: black;
+}
+#sideNav{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(71,71,71);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+#sideNav div a{
+    display: block;
+    padding:5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:lightgrey;
+    text-decoration: none;
+    font-size: large;
+}
+#sideNav div a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+#sideNav div:first-child a{
+    position: relative;
+    right: -92%;
+    font-size: 15pt;
+}
+#openSideNav{
+    position: fixed;
+    top: 0;
+    right: 2%;
+    visibility: hidden;
 }
 article{
     grid-area:article;
@@ -90,16 +126,24 @@ footer{
 
 @media screen and (max-width:750px){
     body{
-        grid-template-rows: 1fr 5px 8fr 5px 0.5fr;
-        grid-template-columns:4fr;
+        grid-template-rows: 0.3fr 1fr 5px 8fr 5px 0.5fr;
+        grid-template-columns:6fr;
         grid-template-areas:
+                "nav"
                 "header"
                 "."
                 "article"
                 "."
                 "footer";
     }
-    nav{
+    nav div{
         display: none;
     }
+    nav div:first-child{
+        display: inline;
+    }
+    #openSideNav{
+        visibility: visible;
+    }
+
 }

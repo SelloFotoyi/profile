@@ -33,4 +33,18 @@ $(function() {
         $("#githubIcon").attr("src", "src/github_black.png");
         $("#githubIcon").css({"width": "20px", "height": "20px"});
     });
+
+    $("#openSideNav").mouseenter(function () {
+        $("#openSideNav").css("cursor","pointer");
+    });
+
+    $("#openSideNav").on("click",function () {
+       $("#openSideNav").fadeOut(2000);
+       $("#sideNav").css("visibility","visible");
+    });
+
+    $("#navX").on("click", function () {
+        $("#sideNav").css("visibility","hidden");
+        $("#openSideNav").fadeIn(2000);
+    });
 });
