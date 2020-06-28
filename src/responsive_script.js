@@ -35,15 +35,32 @@ $(function() {
 
     $("#openSideNav").mouseenter(function () {
         $("#openSideNav").css("cursor","pointer");
+        $("#openSideNav").css("cursor","pointer");
     });
 
     $("#openSideNav").on("click",function () {
        $("#openSideNav").hide();
-       $("#sideNav").css("visibility","visible");
+       $("#sideNav").animate({
+          width: "100%"
+       },1000);
     });
 
     $("#navX").on("click", function () {
-        $("#sideNav").css("visibility","hidden");
+        $("#sideNav").animate({
+            width: "0"
+        },1000);
+        $("#openSideNav").show();
+    });
+
+    $("#toSKills").on("click", function () {
+        $("#sideNav").animate({
+            width: "0"
+        },500);
+
+        $('document','body').animate({
+            scrollTop: $("#skills").offset().top
+        },1000);
+
         $("#openSideNav").show();
     });
 });
