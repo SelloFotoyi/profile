@@ -150,6 +150,25 @@ article{
     box-shadow: 10px 10px 5px 2px black;
     text-align: justify;
 }
+#skillsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    border-collapse: collapse;
+}
+.tableHeading{
+    background-color:rgb(0,205,205);
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+td:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
 footer{
     grid-area:footer;
     background-color:rgb(59,59,59);
@@ -196,6 +215,13 @@ footer{
     }
     #openSideNav{
         visibility: visible;
+    }
+    #skillsContainer{
+        flex-direction: column;
+    }
+    #skillsContainer div{
+        align-self: center;
+        margin-bottom: 5px;
     }
 
 }
