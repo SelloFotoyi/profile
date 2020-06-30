@@ -40,6 +40,7 @@ header div img{
 }
 header div{
     margin: 5%;
+    margin-bottom: 0;
 }
 header div:first-child{
     text-align: center;
@@ -188,7 +189,7 @@ footer{
 
 @media screen and (max-width:750px){
     body{
-        grid-template-rows: 0.3fr 0.7fr 5px 6fr 0.5fr;
+        grid-template-rows: 0.1fr 0.5fr 5px 6fr 0.2fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
