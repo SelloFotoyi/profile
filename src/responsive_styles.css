@@ -152,8 +152,11 @@ article{
     text-align: justify;
 }
 #skillsFlexContainer{
+    height: 500px;
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
 }
 .skillCategory{
     background-color:cyan;
@@ -169,6 +172,14 @@ article{
     justify-content: space-around;
     align-content: center;
     flex-basis: 100px;
+}
+#frameworkFlexItem{
+    width: 30%;
+    align-self: center;
+}
+#vcsSkillFlexItem{
+    width: 30%;
+    align-self: center;
 }
 .skillEntity{
     display: flex;
