@@ -63,4 +63,13 @@ $(function() {
 
         $("#openSideNav").show();
     });
+
+    let musicAppImage = $("<div></div>").html($("#musicAppImage").html());
+    $("#musicAppImage").mouseenter(function(){
+        $(this).html($("#musicAppDetail").html());
+    });
+
+    $("#musicAppImage").mouseleave(function(){
+        $(this).html(musicAppImage.html());
+    });
 });

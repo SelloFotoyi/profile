@@ -11,7 +11,7 @@ body{
     background:-webkit-linear-gradient(left,rgb(184,184,184),rgb(99,99,99));
     display: grid;
   /*  grid-gap: 5px;*/
-    grid-template-rows: 0.5fr 2fr 5px 7fr 125px;
+    grid-template-rows: 0.5fr 2fr 5px auto 125px;
     grid-template-columns: 5fr;
     grid-template-areas:
         "nav"
@@ -169,7 +169,27 @@ td:hover{
     cursor: pointer;
     font-weight: bold;
 }
-
+.projectDiv img{
+    width: 175px;
+    height: 125px;
+}
+.projectDiv{
+    width:150px;
+    height:150px;
+    position:relative;
+    transition:transform 1s linear;
+    text-align: center;
+}
+.projectDiv:hover{
+    transform:rotateY(360deg);
+    background-color:white;
+    border:1px solid rgb(71,71,71);
+}
+.projectDetail{
+    width:175px;
+    height:150px;
+    display:none;
+}
 footer{
     grid-area:footer;
     background-color:rgb(59,59,59);
