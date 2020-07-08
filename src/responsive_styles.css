@@ -151,9 +151,55 @@ article{
     box-shadow: 10px 10px 5px 2px black;
     text-align: justify;
 }
-#skillsContainer{
+#skillsFlexContainer{
+    height: 500px;
     display: flex;
+    flex-direction: column;
+    align-content: space-between;
     justify-content: space-between;
+}
+.skillCategory{
+    background-color:cyan;
+    text-align:center;
+}
+.skillFlexItem{
+    display: flex;
+    flex-direction: column;
+}
+.skillsContainer{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-content: center;
+    flex-basis: 100px;
+}
+#frameworkFlexItem{
+    width: 30%;
+    align-self: center;
+}
+#vcsSkillFlexItem{
+    width: 30%;
+    align-self: center;
+}
+.skillEntity{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-top: 10px;
+}
+.skillEntity:hover{
+    cursor: pointer;
+    border-bottom: 3px solid darkgrey;
+}
+.skillImage img{
+    height: 50px;
+    width:50px;
+}
+.skillImage{
+    align-self: center;
+}
+.skillName{
+    text-align: center;
 }
 table{
     border-collapse: collapse;

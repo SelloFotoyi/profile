@@ -91,68 +91,91 @@
 
     <div class="articleSubSection"> <!-- background -->
         <h2 class="subTitle" id="skills">My Skills</h2>
-        <p>
-            I was introduced to coding during the earlier years of my qualification through
-            a Software Development course, which mainly focused on Object Orientated Programming with C++. I broadened
-            my programming skill set through self-learning of web front-end fundamentals and exploration of other
-            programming languages. I have categorised my skills below (these <i><strong>will</strong></i> increase in
-            number or be improved as I am continually working on my skill set).
-        </p>
-        <div id="skillsContainer">
-            <div>
-                <table border="1">
-                    <th class="tableHeading">Programming Languages/Similar</th>
-                    <tr>
-                        <td>  Java </td>
-                    </tr>
-                    <tr>
-                        <td> Javascript  </td>
-                    </tr>
-                    <tr>
-                        <td>  HTML & CSS </td>
-                    </tr>
-                    <tr>
-                        <td>  C/C++ </td>
-                    </tr>
-                    <tr>
-                        <td> Assembly  </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <table border="1">
-                    <th class="tableHeading">Tools / IDEs</th>
-                    <tr>
-                        <td>  IntelliJ Idea (Community version) </td>
-                    </tr>
-                    <tr>
-                        <td> Webstorm  </td>
-                    </tr>
-                    <tr>
-                        <td> Codelite  </td>
-                    </tr>
-                    <tr>
-                        <td>  Codeblocks </td>
-                    </tr>
-                    <tr>
-                        <td>  MPLAB </td>
-                    </tr>
-                </table>
+        <div id="skillsFlexContainer" id="languagesSKillFlexItem">
+            <div class="skillFlexItem">
+                <div class="skillCategory">Languages</div>
+                <div class="skillsContainer">
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/html_icon.png">
+                        </div>
+                        <div class="skillName">HTML</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/css_icon.png">
+                        </div>
+                        <div class="skillName">CSS</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/js_iocn.png">
+                        </div>
+                        <div class="skillName">JavaScript</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/java_icon.png">
+                        </div>
+                        <div class="skillName">Java</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/cpp_icon.png">
+                        </div>
+                        <div class="skillName">C++</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/c_icon.png">
+                        </div>
+                        <div class="skillName">C</div>
+                    </div>
+                </div>
+
             </div>
 
+            <div class="skillFlexItem" id="frameworkFlexItem">
+                <div class="skillCategory">Frameworks / Libraries</div>
+                <div class="skillsContainer">
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/jquery_icon.png">
+                        </div>
+                        <div class="skillName">Jquery</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/sfml_icon.png">
+                        </div>
+                        <div class="skillName">SFML</div>
+                    </div>
+                </div>
 
-            <div>
-                <table border="1">
-                    <th class="tableHeading">Frameworks and Libraries</th>
-                    <tr>
-                        <td> JQuery </td>
-                    </tr>
-                    <tr>
-                        <td> SFML </td>
-                    </tr>
-                </table>
             </div>
-         </div>
+
+            <div class="skillFlexItem" id="vcsSkillFlexItem">
+                <div class="skillCategory">Version Control Systems</div>
+                <div class="skillsContainer">
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/git_icon.png">
+
+                        </div>
+                        <div class="skillName">Git</div>
+                    </div>
+                    <div class="skillEntity">
+                        <div class="skillImage">
+                            <img src="src/icons/github_icon.png">
+                        </div>
+                        <div class="skillName">Github</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -183,19 +206,19 @@
     <div id = "socials">
         <div title="Twitter">
             <a href = "https://twitter.com/SelloCFotoyi" target = "_blank">
-                <img id = "twitterIcon" class = "socialIcons" src = "src/twitter_black.png">
+                <img id = "twitterIcon" class = "socialIcons" src = "src/icons/twitter_black.png">
             </a>
         </div>
 
         <div title="Github">
             <a href = "https://github.com/SelloFotoyi" target = "_blank">
-                <img id = "githubIcon" class = "socialIcons" src = "src/github_black.png">
+                <img id = "githubIcon" class = "socialIcons" src = "src/icons/github_black.png">
             </a>
         </div>
 
         <div title="LinkedIn">
             <a href = "https://www.linkedin.com/in/sello-fotoyi-79132672/" target = "_blank">
-                <img id = "linkedInIcon" class = "socialIcons" src = "src/linkedIn_black.png">
+                <img id = "linkedInIcon" class = "socialIcons" src = "src/icons/linkedIn_black.png">
             </a>
         </div>
     </div>
