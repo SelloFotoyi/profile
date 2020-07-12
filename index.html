@@ -3,6 +3,7 @@
 <head>
     <title>Sello C. Fotoyi | Home</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
 
     <script type = "text/javascript" src = "src/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="src/responsive_script.js"></script>
@@ -16,8 +17,10 @@
     <div>
         <h3>Sello C. Fotoyi</h3>
         <p class="descr">
-            BSc Eng(Electrical) | Aspiring Software and Electrical Engineer | Retro Gamer
+            BSc Eng(Electrical) <br>
+            Aspiring <span id="myTitle">Electrical </span> Engineer
         </p>
+        
     </div>
 
 </header>
@@ -89,11 +92,11 @@
         </p>
     </div>
 
-    <div class="articleSubSection"> <!-- background -->
+    <div class="articleSubSection" id="skillSection"> <!-- background -->
         <h2 class="subTitle" id="skills">My Skills</h2>
-        <div id="skillsFlexContainer" id="languagesSKillFlexItem">
-            <div class="skillFlexItem">
-                <div class="skillCategory">Languages</div>
+        <div id="skillsFlexContainer">
+            <div class="skillFlexItem" id="languagesSKillFlexItem">
+                <div class="skillCategory"><div>Languages</div></div>
                 <div class="skillsContainer">
                     <div class="skillEntity">
                         <div class="skillImage">
@@ -136,7 +139,7 @@
             </div>
 
             <div class="skillFlexItem" id="frameworkFlexItem">
-                <div class="skillCategory">Frameworks / Libraries</div>
+                <div class="skillCategory"><div>Frameworks / Libraries</div></div>
                 <div class="skillsContainer">
                     <div class="skillEntity">
                         <div class="skillImage">
@@ -155,7 +158,7 @@
             </div>
 
             <div class="skillFlexItem" id="vcsSkillFlexItem">
-                <div class="skillCategory">Version Control Systems</div>
+                <div class="skillCategory"><div id="vcsTitle">Version Control Systems</div></div>
                 <div class="skillsContainer">
                     <div class="skillEntity">
                         <div class="skillImage">

@@ -120,7 +120,7 @@ nav div a:hover{
 }
 #navX{
     position: relative;
-    right: -95%;
+    right: -92%;
     font-size: 15pt;
 }
 #navX:hover{
@@ -174,11 +174,11 @@ article{
     flex-basis: 100px;
 }
 #frameworkFlexItem{
-    width: 30%;
+    width: 45%;
     align-self: center;
 }
 #vcsSkillFlexItem{
-    width: 30%;
+    width: 45%;
     align-self: center;
 }
 .skillEntity{
@@ -253,9 +253,9 @@ footer{
     margin: 5px;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:535px), screen and (max-width:600){
     body{
-        grid-template-rows: 0.1fr 0.5fr 5px 6fr 0.2fr;
+        grid-template-rows: 0.2fr 0.5fr 5px 5fr 0.2fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
@@ -263,6 +263,89 @@ footer{
                 "."
                 "article"
                 "footer";
+                
+    }
+    nav{
+        height: 60px;
+    }
+    
+    header div img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+    }
+    .articleSubSection{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav div{
+        display: none;
+    }
+    nav div:first-child{
+        display: inline;
+        margin-top: 0;
+        align-self: center;
+    }
+    #openSideNav{
+        visibility: visible;
+    }
+    #skillSection{
+        height: 45%;
+    }
+    .skillsContainer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 375px;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    .skillsContainer div{
+        align-self: center;
+        margin-bottom: 5px;
+    }
+    .skillCategory{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .skillCategory div{
+        align-self: center;
+        font-size: 12pt;
+    }
+    .skillEntity{
+        width: 75px;
+        height: 75px; 
+        padding:1%;
+        padding-bottom: 2%;
+    }
+    #frameworkFlexItem{
+        width:70%;
+    }
+    #vcsSkillFlexItem{
+        width:70%;
+    }
+
+
+}
+
+@media screen and (max-width:330px){
+    body{
+        grid-template-rows: 0.2fr 0.5fr 5px 5fr 0.2fr;
+        grid-template-columns:4fr;
+        grid-template-areas:
+                "nav"
+                "header"
+                "."
+                "article"
+                "footer";
+                
+    }
+    nav{
+        height: 60px;
     }
     header div img{
         height: 150px;
@@ -273,22 +356,158 @@ footer{
     .articleSubSection{
         margin-top: 10%;
         margin-bottom: 10%;
+        margin-left: 0;
+        margin-right: 0;
     }
     nav div{
         display: none;
     }
     nav div:first-child{
         display: inline;
+        margin-top: 0;
+        align-self: center;
     }
     #openSideNav{
         visibility: visible;
     }
-    #skillsContainer{
-        flex-direction: column;
+    #skillSection{
+        height: 42%;
     }
-    #skillsContainer div{
+    .skillsContainer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    .skillsContainer div{
         align-self: center;
         margin-bottom: 5px;
     }
+    .skillCategory{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .skillCategory div{
+        align-self: center;
+        font-size: 12pt;
+    }
+    .skillEntity{
+        width: 60px;
+        height: 60px; 
+        padding:1%;
+    }
+    .skillEntity:hover{
+        border-bottom: 0;
+        cursor: pointer;
+    }
+    .skillImage img{
+        width:35px;
+        height:35px
+    }
+    #languagesSKillFlexItem{
+        width:90%;
+        align-self: center;
+    }
+    #frameworkFlexItem{
+        width:70%;
+    }
+    #vcsSkillFlexItem{
+        width:70%;
+    }
+}
 
+@media screen and (max-width:240px){
+    body{
+        grid-template-rows: 0.2fr 0.5fr 5px 6fr 0.2fr;
+        grid-template-columns:4fr;
+        grid-template-areas:
+                "nav"
+                "header"
+                "."
+                "article"
+                "footer";
+                
+    }
+    nav{
+        height: 60px;
+    }
+    header div img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+    }
+    .articleSubSection{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav div{
+        display: none;
+    }
+    nav div:first-child{
+        display: inline;
+        margin-top: 0;
+        align-self: center;
+    }
+    #openSideNav{
+        visibility: visible;
+    }
+    #skillSection{
+        height: 42%;
+    }
+    .skillsContainer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    .skillsContainer div{
+        align-self: center;
+        margin-bottom: 5px;
+    }
+    .skillCategory{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .skillCategory div{
+        align-self: center;
+        font-size: 12pt;
+    }
+    .skillEntity{
+        width: 50px;
+        height: 50px; 
+        padding:1%;
+        font-size: small;
+    }
+    .skillEntity:hover{
+        border-bottom: 0;
+        cursor: pointer;
+    }
+    .skillImage img{
+        width:30px;
+        height:30px
+    }
+    #languagesSKillFlexItem{
+        width:80%;
+        align-self: center;
+        
+    }
+    #frameworkFlexItem{
+        width:70%;
+    }
+    #vcsSkillFlexItem{
+        width:70%;
+    }   
+    #vcsTitle{
+        font-size: smaller;
+    }
 }

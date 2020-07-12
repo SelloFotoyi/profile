@@ -42,13 +42,13 @@ $(function() {
        $("#openSideNav").hide();
        $("#sideNav").animate({
           width: "100%"
-       },1000);
+       },500);
     });
 
     $("#navX").on("click", function () {
         $("#sideNav").animate({
             width: "0"
-        },1000);
+        },500);
         $("#openSideNav").show();
     });
 
