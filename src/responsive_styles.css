@@ -226,13 +226,19 @@ article{
     text-align: center;
 }
 
+#projectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 .projectDiv img{
-    width: 175px;
-    height: 125px;
+    width: 250px;
+    height: 225px;
 }
 .projectDiv{
-    width:150px;
-    height:150px;
+    align-self: center;
+    width:250px;
+    height:250px;
     position:relative;
     transition:transform 1s linear;
     text-align: center;
@@ -275,7 +281,7 @@ footer{
 
 @media screen and (max-width:535px), screen and (max-width:600){
     body{
-        grid-template-rows: 0.2fr 0.5fr 5px 5fr 0.2fr;
+        grid-template-rows: 0.2fr 0.5fr 5px 6fr 0.2fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
@@ -354,7 +360,7 @@ footer{
 
 @media screen and (max-width:330px){
     body{
-        grid-template-rows: 0.2fr 0.5fr 5px 5fr 0.2fr;
+        grid-template-rows: 0.2fr 0.5fr 5px 6fr 0.2fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
