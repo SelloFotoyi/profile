@@ -25,12 +25,32 @@ header{
     background: url("code_bg.jpg") no-repeat;
     background-size:cover;
     margin-top:5px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: headerAnime 10s ease-in-out 0s infinite;
+}
+@keyframes headerAnime{
+    0%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+  /*  10%{}
+    20%{}
+    30%{}
+    40%{}*/
+    40%{background: url("elec_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+  /*  60%{}
+    70%{}
+    80%{}
+    90%{}*/
+    100%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
 }
 header div img{
     height: 250px;
