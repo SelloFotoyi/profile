@@ -220,10 +220,10 @@ article{
     margin: 5px;
     margin-top: 10px;
 }
-.skillEntity:hover{
+/*.skillEntity:hover{
     cursor: pointer;
     border-bottom: 3px solid darkgrey;
-}
+}*/
 .skillImage img{
     height: 50px;
     width:50px;
