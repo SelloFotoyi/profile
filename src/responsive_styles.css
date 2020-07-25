@@ -14,7 +14,7 @@ body{
     background:-webkit-linear-gradient(left,rgb(184,184,184),rgb(99,99,99));
 
     display: grid;
-    grid-template-rows: 0.5fr 2fr 5px 8fr 125px;
+    grid-template-rows: 0.3fr 2fr 5px 8fr 125px;
     grid-template-columns: 5fr;
     grid-template-areas:
         "nav"
@@ -36,14 +36,53 @@ header{
     justify-content: center;
     animation: headerAnime 10s ease-in-out 0s infinite;
     -webkit-animation: headerAnime 10s ease-in-out 0s infinite;
-    -moz-animation: headerAnime 10s ease-in-out 0s infinite;
+   /* -moz-animation-duration: 10s;
+    -moz-animation-name: headerAnime;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;*/
+   /* -moz-animation: headerAnime 10s ease-out 0s infinite;*/
     -o-animation: headerAnime 10s ease-in-out 0s infinite;
+    -ms-animation: headerAnime 10s ease-in-out 0s infinite;
 }
 @keyframes headerAnime{
     0%{background: url("code_bg.jpg") no-repeat;
         background-size:cover;
     }
-    40%{background: url("elec_bg.jpg") no-repeat;
+    40%{background: url("elec_bg.png") no-repeat;
+        background-size:cover;
+    }
+    100%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+}
+@-webkit-keyframes headerAnime{
+    0%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+    40%{background: url("elec_bg.png") no-repeat;
+        background-size:cover;
+    }
+    100%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+}
+/*@-moz-keyframes headerAnime{
+    0%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+    40%{background: url("elec_bg.png") no-repeat;
+        background-size:cover;
+    }
+    100%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+}*/
+@-ms-keyframes headerAnime{
+    0%{background: url("code_bg.jpg") no-repeat;
+        background-size:cover;
+    }
+    40%{background: url("elec_bg.png") no-repeat;
         background-size:cover;
     }
     100%{background: url("code_bg.jpg") no-repeat;
@@ -290,7 +329,7 @@ footer{
 
 @media screen and (max-width:600px){
     body{
-        grid-template-rows: 0.2fr 0.5fr 6px 6fr 0.2fr;
+        grid-template-rows: 0.21fr 0.5fr 6px 6fr 0.2fr;
         grid-template-columns:4fr;
         grid-template-areas:
                 "nav"
