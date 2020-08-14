@@ -326,7 +326,10 @@ footer{
     height:20px;
     margin: 5px;
 }
-/* @media screen and (max-width:2700px){
+#projectsSection p{
+    text-align: center;
+}
+ @media screen and (min-width:2560px){
     body{
         grid-template-rows: 0.21fr 1.2fr 6px 6fr 0.2fr;
         grid-template-columns:4fr;
@@ -344,7 +347,7 @@ footer{
     nav div{
         align-self: center;
     }
-} */
+} 
 @media screen and (max-width:600px){
     body{
         grid-template-rows: 0.21fr 0.5fr 6px 6fr 0.2fr;
