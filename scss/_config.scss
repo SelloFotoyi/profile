@@ -6,6 +6,10 @@ $colors: (
   "alternate": #76f186,
 );
 
+@mixin transition-ease {
+  transition: all 1s ease-in-out;
+}
+
 @function set-color($color) {
   @if $color == "primary" {
     @return map-get($colors, primary);
