@@ -6,8 +6,20 @@ $colors: (
   "alternate": #76f186,
 );
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @mixin transition-ease {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin sm_heading {
+  width: 40%;
+  margin: 0 auto;
+  border-bottom: 1px solid set-color("primary");
 }
 
 @function set-color($color) {
@@ -22,10 +34,4 @@ $colors: (
   } @else if $color == "alternate" {
     @return map-get($colors, alternate);
   }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }

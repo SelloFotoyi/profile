@@ -12,14 +12,22 @@ function toggleOpen(){
     if(!showMenu){
         menuBtn__burger.classList.add('open');
         nav.classList.add('open');
-        home_logo.classList.add('open');
-        social_icons.classList.add('open');
+        if(home_logo){
+            home_logo.classList.add('open');
+        }
+        if(social_icons){
+             social_icons.classList.add('open');
+        }
         showMenu = true;
     }else if(showMenu){
         menuBtn__burger.classList.remove('open');
         nav.classList.remove('open');
-        home_logo.classList.remove('open');
-        social_icons.classList.remove('open');
+        if(home_logo){
+            home_logo.classList.remove('open');
+        }
+        if(social_icons){
+            social_icons.classList.remove('open');
+        }
         showMenu = false;
     }
     

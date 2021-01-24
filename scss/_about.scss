@@ -1,0 +1,84 @@
+.mobile-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  background-color: set-color("grey-1");
+  border-bottom: 1px solid set-color("primary");
+  z-index: 1;
+  width: 100%;
+}
+
+.section-intro {
+  background: transparent;
+  padding-top: 5rem;
+  #{&}__title {
+    margin: 0 auto;
+    width: 45vw;
+    border-bottom: 2px solid set-color("primary");
+    border-top: 2px solid set-color("primary");
+    text-transform: uppercase;
+    font-size: small;
+    padding: 0.1rem;
+  }
+  #{&}__bio {
+    font-size: 1.25rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.alt-text {
+  color: set-color("alternate");
+}
+
+.skills-tech {
+  margin: 0 auto;
+  width: 90vw;
+  #{&}__heading {
+    @include sm_heading;
+  }
+}
+
+.skills-tech__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  z-index: 0;
+
+  #{&}__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    text-align: center;
+
+    img {
+      transform: scale(0.85);
+      width: 50%;
+      flex-basis: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.skills-other {
+  width: 80%;
+  margin: 0 auto;
+  #{&}__heading {
+    @include sm_heading;
+  }
+  #{&}__skill {
+    margin: 1.5rem auto 0.5rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}

@@ -1,8 +1,11 @@
+.home {
+  height: 100vh;
+}
 .home-logo {
   @include transition-ease;
   position: relative;
   top: 35vh;
-  left: 0vw;
+  // left: -3vw;
   display: flex;
   font-size: 9rem;
   font-weight: 500;
@@ -24,8 +27,10 @@
   }
 
   img {
-    width: 1.5rem;
-    height: 1.5rem;
-    // object-fit: cover;
+    align-self: center;
+    transform: scale(1);
+    width: 50%;
+    flex-basis: 50%;
+    object-fit: cover;
   }
 }
