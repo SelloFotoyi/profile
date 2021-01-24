@@ -1,4 +1,4 @@
-@import "config", "menu", "home";
+@import "config", "menu", "home", "about";
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -10,21 +10,11 @@ body {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   padding: 0.3rem;
 }
 
 a {
   text-decoration: none;
   color: set-color("primary");
-}
-
-footer {
-  .social-icons {
-    position: relative;
-    top: 90vh;
-    margin: 0 0.5rem;
-    display: flex;
-    justify-content: space-evenly;
-  }
 }

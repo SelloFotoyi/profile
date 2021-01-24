@@ -1,10 +1,31 @@
 .home-logo {
-  position: absolute;
+  @include transition-ease;
+  position: relative;
   top: 35vh;
   left: 0vw;
   display: flex;
   font-size: 9rem;
   font-weight: 500;
   opacity: 0.2;
-  z-index: 0;
+  &.open {
+    transform: scale(0);
+  }
+}
+
+.social-icons {
+  @include transition-ease;
+  position: relative;
+  top: 70vh;
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  &.open {
+    transform: scale(0);
+  }
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    // object-fit: cover;
+  }
 }
