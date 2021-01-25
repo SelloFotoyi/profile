@@ -37,7 +37,7 @@
       background: set-color("primary");
     }
     &.open {
-      transform: rotate(720deg);
+      transform: rotate(360deg);
       background: transparent;
       &::before {
         transform: translate(0, 0.5rem) rotate(45deg);
@@ -47,9 +47,16 @@
       }
     }
   }
-  &.open {
-    transform: rotate(720deg);
-  }
+}
+.mobile-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  background-color: set-color("grey-1");
+  border-bottom: 1px solid set-color("primary");
+  z-index: 1;
+  width: 100%;
 }
 
 .nav {
