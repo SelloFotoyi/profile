@@ -1,11 +1,12 @@
 .home {
   height: 100vh;
+  width: 100%;
 }
 .home-logo {
   @include transition-ease;
   position: relative;
+  margin: 0 auto;
   top: 35vh;
-  // left: -3vw;
   display: flex;
   font-size: 9rem;
   font-weight: 500;
@@ -19,7 +20,7 @@
   @include transition-ease;
   position: relative;
   top: 70vh;
-  margin: 0 0.5rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   &.open {
