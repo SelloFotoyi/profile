@@ -300,6 +300,8 @@ h3 {
 
 .project-card .project-card__div p button:hover {
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem #000;
   background: gray;
   color: white;
 }
