@@ -28,6 +28,13 @@
   justify-content: center;
   font-size: 1.1rem;
   text-align: center;
+  a {
+    img {
+      transform: scale(0.8);
+      width: 85%;
+      object-fit: cover;
+    }
+  }
 
   img {
     transform: scale(0.8);
