@@ -21,6 +21,9 @@ $colors: (
   margin: 0 auto;
   border-bottom: 1px solid set-color("primary");
 }
+@mixin section-heading {
+  margin: 0 auto 2rem auto;
+}
 
 @function set-color($color) {
   @if $color == "primary" {

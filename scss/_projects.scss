@@ -6,7 +6,8 @@
 }
 
 .projects-heading {
-  margin: 0 auto 2rem auto;
+  @include section-heading;
+  // margin: 0 auto 2rem auto;
 }
 
 .project-grid {
