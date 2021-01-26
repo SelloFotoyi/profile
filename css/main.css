@@ -273,14 +273,8 @@ h3 {
   width: 100%;
   height: 7rem;
   background: transparent;
-<<<<<<< HEAD
-  backdrop-filter: blur(0);
-  filter: brightness(50%);
-  opacity: 1;
-=======
   backdrop-filter: blur(10px);
   filter: brightness(60%);
->>>>>>> master
 }
 
 .project-card .project-card__div p {
@@ -289,19 +283,12 @@ h3 {
   z-index: 2;
   text-align: center;
   color: white;
-<<<<<<< HEAD
-=======
   font-size: 1.1rem;
->>>>>>> master
   z-index: 0;
 }
 
 .project-card .project-card__div p button {
-<<<<<<< HEAD
-  width: 5rem;
-=======
   width: 7rem;
->>>>>>> master
   height: 2.5rem;
   font-size: large;
   font-weight: bold;
@@ -313,17 +300,12 @@ h3 {
 
 .project-card .project-card__div p button:hover {
   transition: all 0.5s ease-in-out;
-<<<<<<< HEAD
-=======
   cursor: pointer;
   box-shadow: 0 0 0.5rem #000;
->>>>>>> master
   background: gray;
   color: white;
 }
 
-<<<<<<< HEAD
-=======
 .contact {
   padding-top: 5rem;
   margin: 0 auto;
@@ -369,7 +351,6 @@ h3 {
   object-fit: cover;
 }
 
->>>>>>> master
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
