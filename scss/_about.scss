@@ -11,7 +11,7 @@
     padding: 0.1rem;
   }
   #{&}__bio {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     padding: 1.5rem;
     text-align: center;
   }
@@ -37,7 +37,7 @@ h3 {
 
 .skills-tech__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   z-index: 0;
 
@@ -51,7 +51,8 @@ h3 {
     text-align: center;
 
     img {
-      transform: scale(0.85);
+      transform: scale(0.9);
+      // padding: 0.1rem;
       width: 50%;
       flex-basis: 50%;
       object-fit: cover;
@@ -61,9 +62,10 @@ h3 {
 
 .skills-other {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   #{&}__heading {
     @include sm_heading;
+    margin-top: 1rem;
   }
   #{&}__skill {
     margin: 1.5rem auto 0.5rem auto;

@@ -8,7 +8,7 @@
   margin: 0 auto;
   top: 35vh;
   display: flex;
-  font-size: 9rem;
+  font-size: 5rem;
   font-weight: 500;
   opacity: 0.2;
   &.open {
@@ -19,10 +19,17 @@
 .social-icons {
   @include transition-ease;
   position: relative;
-  top: 70vh;
+  top: 75vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  a {
+    @include transition-ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   &.open {
     transform: scale(0);
   }
