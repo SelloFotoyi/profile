@@ -1,0 +1,173 @@
+@include media-mobile-m {
+  .skills-tech__grid {
+    grid-template-columns: repeat(3, 1fr);
+    #{&}__card {
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+  .project-card {
+    gap: 5rem;
+    #{&}__div {
+      height: 36vh;
+      div {
+        height: 7.5rem;
+        top: 56%;
+      }
+      p {
+        padding: 0 0.1rem;
+        button {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-mobile-l {
+  .project-grid {
+    gap: 3rem;
+  }
+  .project-card {
+    gap: 5rem;
+    #{&}__div {
+      div {
+        height: 7.25rem;
+        top: 58%;
+      }
+      p {
+        top: 62.5%;
+        padding: 0 0.1rem;
+        button {
+          width: 8rem;
+        }
+      }
+    }
+  }
+  .contact {
+    p {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+@include media-tablet {
+  .menu-btn {
+    transform: scale(1.5);
+    top: 2.5rem;
+    right: 1.5rem;
+  }
+  .mobile-nav-bar {
+    height: 4.8rem;
+  }
+  .nav {
+    font-size: 3rem;
+  }
+  .social-icons {
+    a {
+      i {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .section-intro {
+    padding-top: 7rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+    #{&}__title {
+      font-size: 1.3rem;
+    }
+    #{&}__bio {
+      font-size: 1.5rem;
+    }
+  }
+  .skills-tech {
+    #{&}__heading {
+      font-size: 1.5rem;
+    }
+  }
+  .skills-tech__grid {
+    padding-top: 1rem;
+    #{&}__card {
+      i {
+        transform: scale(1.25);
+      }
+
+      img {
+        transform: scale(0.7);
+      }
+      .skill-title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .skills-other {
+    #{&}__heading {
+      font-size: 1.5rem;
+    }
+    #{&}__skill {
+      font-size: 1.5rem;
+    }
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .projects-heading {
+    font-size: 2.5rem;
+  }
+  .project-grid {
+    gap: 6rem;
+  }
+  .project-card {
+    #{&}__title {
+      font-size: 1.75rem;
+    }
+    #{&}__div {
+      div {
+        height: 8rem;
+        top: 66%;
+      }
+      p {
+        top: 70%;
+        font-size: 1.5rem;
+        text-align: center;
+        button {
+          width: 18rem;
+          height: 3rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  .contact {
+    margin-top: 2rem;
+    height: 100vh;
+    #{&}__heading {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .contact-grid {
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-card {
+    i {
+      transform: scale(1.5);
+      padding: 0.75rem;
+    }
+    a {
+      i {
+        transform: scale(1.5);
+        padding: 0.75rem;
+      }
+    }
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}

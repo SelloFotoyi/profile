@@ -31,7 +31,9 @@ h3 {
   margin: 0 auto;
   width: 90vw;
   #{&}__heading {
-    @include sm_heading;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 1px solid set-color("primary");
   }
 }
 
@@ -46,13 +48,16 @@ h3 {
     flex-direction: column;
     padding: 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1.1rem;
     text-align: center;
+    i {
+      padding: 0.5rem;
+    }
 
     img {
       transform: scale(0.9);
-      // padding: 0.1rem;
+      margin-bottom: 0.5rem;
       width: 50%;
       flex-basis: 50%;
       object-fit: cover;
