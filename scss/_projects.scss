@@ -1,18 +1,16 @@
 .projects {
-  padding-top: 5rem;
+  padding-top: 0rem;
   margin: 0 auto;
   width: 100%;
   height: 100%;
 }
-
-.projects-heading {
-  @include section-heading;
-  // margin: 0 auto 2rem auto;
+.section-heading {
+  @include section-heading-config(65vh, 25vh, 25vh);
 }
 
 .project-grid {
   width: 90%;
-  margin: 0 auto 5rem auto;
+  margin: 1rem auto 5rem auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
