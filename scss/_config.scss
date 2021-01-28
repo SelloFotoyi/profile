@@ -76,3 +76,44 @@ $desktop_4k: 2650px;
     @content;
   }
 }
+
+@mixin section-heading-config($header-height, $bg-height, $info-height) {
+  background: set-color("secondary");
+  padding-top: 3rem;
+  position: relative;
+  height: $header-height; //65vh;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #{&}__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: $bg-height; //30vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  #{&}__info {
+    color: set-color("secondary");
+    position: absolute;
+    height: $info-height; //25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 0 auto;
+      //  padding: 2rem;
+      text-align: center;
+    }
+  }
+}
