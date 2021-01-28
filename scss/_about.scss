@@ -1,8 +1,11 @@
 .about {
-  background: set-color("secondary") !important;
+  padding-top: 0rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
-.section-heading {
+.about-heading {
   @include section-heading-config(65vh, 30vh, 25vh);
 }
 

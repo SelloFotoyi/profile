@@ -151,10 +151,13 @@
 }
 
 .about {
-  background: white !important;
+  padding-top: 0rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
-.section-heading {
+.about-heading {
   background: white;
   padding-top: 3rem;
   position: relative;
@@ -162,13 +165,13 @@
   width: 100%;
 }
 
-.section-heading img {
+.about-heading img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section-heading .section-heading__bg {
+.about-heading .about-heading__bg {
   background: transparent;
   position: absolute;
   width: 80%;
@@ -179,7 +182,7 @@
   filter: brightness(25%);
 }
 
-.section-heading .section-heading__info {
+.about-heading .about-heading__info {
   color: white;
   position: absolute;
   height: 25vh;
@@ -189,11 +192,11 @@
   padding: 1rem;
 }
 
-.section-heading .section-heading__info h2 {
+.about-heading .about-heading__info h2 {
   font-size: 1.5rem;
 }
 
-.section-heading .section-heading__info p {
+.about-heading .about-heading__info p {
   font-size: 1.1rem;
   margin: 0 auto;
   text-align: center;
@@ -273,7 +276,7 @@ h3 {
   height: 100%;
 }
 
-.section-heading {
+.projects-heading {
   background: white;
   padding-top: 3rem;
   position: relative;
@@ -281,24 +284,24 @@ h3 {
   width: 100%;
 }
 
-.section-heading img {
+.projects-heading img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section-heading .section-heading__bg {
+.projects-heading .projects-heading__bg {
   background: transparent;
   position: absolute;
   width: 80%;
   margin: 2.35rem;
-  height: 25vh;
+  height: 20vh;
   top: 25%;
   backdrop-filter: blur(10px);
   filter: brightness(25%);
 }
 
-.section-heading .section-heading__info {
+.projects-heading .projects-heading__info {
   color: white;
   position: absolute;
   height: 25vh;
@@ -308,11 +311,11 @@ h3 {
   padding: 1rem;
 }
 
-.section-heading .section-heading__info h2 {
+.projects-heading .projects-heading__info h2 {
   font-size: 1.5rem;
 }
 
-.section-heading .section-heading__info p {
+.projects-heading .projects-heading__info p {
   font-size: 1.1rem;
   margin: 0 auto;
   text-align: center;
@@ -391,19 +394,55 @@ h3 {
 }
 
 .contact {
-  padding-top: 5rem;
+  padding-top: 0rem;
   margin: 0 auto;
   width: 100%;
   height: 100%;
 }
 
-.contact .contact__heading {
-  margin-bottom: 0.5rem;
+.section-heading {
+  background: white;
+  padding-top: 3rem;
+  position: relative;
+  height: 65vh;
+  width: 100%;
 }
 
-.contact p {
+.section-heading img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-heading .section-heading__bg {
+  background: transparent;
+  position: absolute;
+  width: 80%;
+  margin: 2.35rem;
+  height: 22vh;
+  top: 25%;
+  backdrop-filter: blur(10px);
+  filter: brightness(25%);
+}
+
+.section-heading .section-heading__info {
+  color: white;
+  position: absolute;
+  height: 25vh;
+  top: 25%;
+  width: 80%;
+  margin: 2.35rem;
+  padding: 1rem;
+}
+
+.section-heading .section-heading__info h2 {
+  font-size: 1.5rem;
+}
+
+.section-heading .section-heading__info p {
+  font-size: 1.1rem;
+  margin: 0 auto;
   text-align: center;
-  padding: 0.5rem;
 }
 
 .contact-grid {
