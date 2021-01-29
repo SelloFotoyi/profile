@@ -205,3 +205,33 @@
     }
   }
 }
+@include media-laptop {
+  .mobile-nav-bar {
+    display: none;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    transform: translateY(0);
+    #{&}__menu {
+      margin-top: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      &__item {
+        margin-right: 5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        &__link {
+          &.logo {
+            display: inline;
+            margin-right: 42.5rem;
+            &:hover {
+              color: rgba(set-color("secondary"), 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
