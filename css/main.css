@@ -60,7 +60,7 @@
 }
 
 .menu-btn__burger.open {
-  transform: rotate(360deg);
+  transform: rotate(180deg);
   background: transparent;
 }
 
@@ -701,6 +701,91 @@ h3 {
   }
   .nav .nav__menu__item__link.logo:hover {
     color: white;
+  }
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-heading .about-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 30vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .about-heading .about-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    margin: 2.35rem 7rem;
+  }
+  .about-heading .about-heading__info {
+    margin: 2.35rem 7rem;
+  }
+  .about-heading .about-heading__info h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  .skills-flex {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .skills-tech {
+    border-right: 1px solid black;
+  }
+  .skills-tech .skills-tech__heading {
+    font-weight: normal;
+  }
+  .skills-tech__grid {
+    width: 80%;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card img {
+    transform: scale(0.5);
+    padding: 0;
+    margin-bottom: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card__title {
+    font-size: 1.2rem;
+  }
+  .skills-other .skills-other__heading {
+    margin-bottom: 4rem;
+    font-weight: normal;
+  }
+  .skills-other .skills-other__skill {
+    font-size: 1.5rem;
   }
 }
 

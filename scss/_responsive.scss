@@ -234,4 +234,58 @@
       }
     }
   }
+  .about-heading {
+    @include section-heading-config(80vh, 30vh, 25vh);
+    #{&}__bg {
+      margin: 2.35rem 7rem;
+    }
+    #{&}__info {
+      margin: 2.35rem 7rem;
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.1;
+      }
+    }
+  }
+
+  .skills-flex {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .skills-tech {
+    border-right: 1px solid set-color("primary");
+    #{&}__heading {
+      font-weight: normal;
+    }
+  }
+  .skills-tech__grid {
+    width: 80%;
+    margin: 0 auto;
+    gap: 0rem;
+    #{&}__card {
+      img {
+        transform: scale(0.5);
+        padding: 0;
+        margin-bottom: 0rem;
+      }
+      &__title {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .skills-other {
+    #{&}__heading {
+      margin-bottom: 4rem;
+      font-weight: normal;
+    }
+    #{&}__skill {
+      font-size: 1.5rem;
+    }
+  }
 }

@@ -48,7 +48,7 @@
       background: rgba(set-color("secondary"), 0.7);
     }
     &.open {
-      transform: rotate(360deg);
+      transform: rotate(180deg);
       background: transparent;
       &::before {
         transform: translate(0, 0.5rem) rotate(45deg);
