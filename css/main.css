@@ -787,6 +787,112 @@ h3 {
   .skills-other .skills-other__skill {
     font-size: 1.5rem;
   }
+  .projects {
+    margin-top: 0rem;
+  }
+  .projects-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .projects-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .projects-heading .projects-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 30vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .projects-heading .projects-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-heading .projects-heading__bg {
+    width: 50%;
+    margin: 2.35rem 20rem;
+    height: 10rem;
+  }
+  .projects-heading .projects-heading__info {
+    margin: 2.35rem 7rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .project-card {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .project-card .project-card__title {
+    font-size: 1.25rem;
+  }
+  .project-card .project-card__div {
+    position: relative;
+    width: 100%;
+    height: 42vh;
+  }
+  .project-card .project-card__div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-card .project-card__div div {
+    position: absolute;
+    top: 53%;
+    width: 100%;
+    height: 8rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    filter: brightness(60%);
+  }
+  .project-card .project-card__div p {
+    position: absolute;
+    line-height: 1.2;
+    top: 58%;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 0.09rem;
+    z-index: 0;
+  }
+  .project-card .project-card__div p button {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: large;
+    margin: 1rem 0.5rem;
+  }
 }
 
 body {
