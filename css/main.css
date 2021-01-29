@@ -197,7 +197,7 @@
 }
 
 .about-heading .about-heading__info p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -316,9 +316,17 @@ h3 {
 }
 
 .projects-heading .projects-heading__info p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.projects-heading .projects-heading__bg {
+  top: 30%;
+}
+
+.projects-heading .projects-heading__info {
+  top: 28%;
 }
 
 .project-grid {
@@ -400,7 +408,7 @@ h3 {
   height: 100%;
 }
 
-.section-heading {
+.contact-heading {
   background: white;
   padding-top: 3rem;
   position: relative;
@@ -408,13 +416,13 @@ h3 {
   width: 100%;
 }
 
-.section-heading img {
+.contact-heading img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section-heading .section-heading__bg {
+.contact-heading .contact-heading__bg {
   background: transparent;
   position: absolute;
   width: 80%;
@@ -425,7 +433,7 @@ h3 {
   filter: brightness(25%);
 }
 
-.section-heading .section-heading__info {
+.contact-heading .contact-heading__info {
   color: white;
   position: absolute;
   height: 25vh;
@@ -435,12 +443,12 @@ h3 {
   padding: 1rem;
 }
 
-.section-heading .section-heading__info h2 {
+.contact-heading .contact-heading__info h2 {
   font-size: 1.5rem;
 }
 
-.section-heading .section-heading__info p {
-  font-size: 1.1rem;
+.contact-heading .contact-heading__info p {
+  font-size: 1rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -541,46 +549,62 @@ h3 {
   .social-icons a i {
     transform: scale(1.5);
   }
-  .section-intro {
-    padding-top: 7rem;
+  .about-heading .about-heading__bg {
+    margin: 7rem 4.75rem;
+    height: 13.5rem;
   }
-  .section-intro h2 {
+  .about-heading .about-heading__info {
+    top: 35%;
+    margin: 3rem 5rem;
+  }
+  .about-heading .about-heading__info h2 {
     font-size: 2.5rem;
   }
-  .section-intro .section-intro__title {
-    font-size: 1.3rem;
-  }
-  .section-intro .section-intro__bio {
-    font-size: 1.5rem;
+  .about-heading .about-heading__info p {
+    font-size: 1.6rem;
   }
   .skills-tech .skills-tech__heading {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .skills-tech__grid {
     padding-top: 1rem;
   }
   .skills-tech__grid .skills-tech__grid__card i {
-    transform: scale(1.25);
+    transform: scale(1.75);
+    padding-top: 2rem;
+    margin-bottom: 2.2rem;
   }
   .skills-tech__grid .skills-tech__grid__card img {
     transform: scale(0.7);
   }
   .skills-tech__grid .skills-tech__grid__card .skill-title {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
   .skills-other .skills-other__heading {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .skills-other .skills-other__skill {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .projects {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
-  .projects-heading {
+  .projects-heading .projects-heading__bg {
+    margin: 5rem 4.75rem;
+    height: 10rem;
+  }
+  .projects-heading .projects-heading__info {
+    top: 35%;
+    margin: 3rem 5rem;
+  }
+  .projects-heading .projects-heading__info h2 {
     font-size: 2.5rem;
   }
+  .projects-heading .projects-heading__info p {
+    font-size: 1.6rem;
+  }
   .project-grid {
+    margin-top: 2.5rem;
     gap: 6rem;
   }
   .project-card .project-card__title {
@@ -601,18 +625,28 @@ h3 {
     font-size: 1.6rem;
   }
   .contact {
-    margin-top: 2rem;
+    margin-top: 1rem;
     height: 100vh;
   }
-  .contact .contact__heading {
+  .contact-heading .contact-heading__bg {
+    margin: 7rem 7.3rem;
+    height: 11rem;
+    width: 70%;
+  }
+  .contact-heading .contact-heading__info {
+    top: 35%;
+    margin: 3rem 5rem;
+  }
+  .contact-heading .contact-heading__info h2 {
     font-size: 2.5rem;
   }
-  .contact p {
-    font-size: 1.3rem;
+  .contact-heading .contact-heading__info p {
+    font-size: 1.6rem;
   }
   .contact-grid {
     margin-top: 5rem;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
   }
   .contact-card i {
     transform: scale(1.5);
@@ -623,7 +657,7 @@ h3 {
     padding: 0.75rem;
   }
   .contact-card span {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 

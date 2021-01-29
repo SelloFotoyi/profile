@@ -6,6 +6,12 @@
 }
 .projects-heading {
   @include section-heading-config(65vh, 20vh, 25vh);
+  #{&}__bg {
+    top: 30%;
+  }
+  #{&}__info {
+    top: 28%;
+  }
 }
 
 .project-grid {
