@@ -365,4 +365,45 @@
       }
     }
   }
+  .contact {
+    margin-top: 0;
+  }
+  .contact-heading {
+    @include section-heading-config(80vh, 22vh, 25vh);
+    #{&}__bg {
+      width: 50%;
+      margin: 5rem 20rem;
+      height: 10rem;
+    }
+    #{&}__info {
+      margin: 5rem 7rem;
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.1;
+      }
+    }
+  }
+  .contact-grid {
+  }
+  .contact-grid {
+    margin-top: 2rem;
+  }
+  .contact-card {
+    a {
+      i {
+        transform: scale(1);
+      }
+    }
+    i {
+      transform: scale(1);
+    }
+    span {
+      font-size: 1.25rem;
+    }
+  }
 }
