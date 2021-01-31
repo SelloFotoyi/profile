@@ -88,7 +88,7 @@
 }
 
 .nav .nav__menu {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -216,6 +216,14 @@
   text-align: center;
 }
 
+.about-heading .about-heading__bg {
+  top: 20%;
+}
+
+.about-heading .about-heading__info {
+  top: 17%;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -309,7 +317,7 @@ h3 {
   position: absolute;
   width: 80%;
   margin: 2.35rem;
-  height: 20vh;
+  height: 17vh;
   top: 25%;
   backdrop-filter: blur(10px);
   filter: brightness(25%);
@@ -336,11 +344,11 @@ h3 {
 }
 
 .projects-heading .projects-heading__bg {
-  top: 30%;
+  top: 35%;
 }
 
 .projects-heading .projects-heading__info {
-  top: 28%;
+  top: 32%;
 }
 
 .project-grid {
@@ -348,7 +356,7 @@ h3 {
   margin: 1rem auto 5rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5rem;
+  gap: 4.5rem;
 }
 
 .project-card {
@@ -392,7 +400,7 @@ h3 {
   text-align: center;
   color: white;
   font-size: 1.1rem;
-  padding: 0 0.09rem;
+  padding: 0 0.5rem;
   z-index: 0;
 }
 
@@ -441,7 +449,7 @@ h3 {
   position: absolute;
   width: 80%;
   margin: 2.35rem;
-  height: 22vh;
+  height: 15vh;
   top: 25%;
   backdrop-filter: blur(10px);
   filter: brightness(25%);
@@ -465,6 +473,14 @@ h3 {
   font-size: 1rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.contact-heading .contact-heading__bg {
+  top: 35%;
+}
+
+.contact-heading .contact-heading__info {
+  top: 32%;
 }
 
 .contact-grid {
@@ -501,11 +517,59 @@ h3 {
 }
 
 @media screen and (min-width: 360px) {
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-heading .about-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 27vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .about-heading .about-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    top: 28%;
+  }
+  .about-heading .about-heading__info {
+    top: 25%;
+  }
   .skills-tech__grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .skills-tech__grid .skills-tech__grid__card img {
     transform: scale(1);
+  }
+  .projects-heading .projects-heading__bg {
+    top: 33.5%;
   }
   .project-card {
     gap: 5rem;
@@ -526,8 +590,98 @@ h3 {
 }
 
 @media screen and (min-width: 412px) {
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-heading .about-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 23vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .about-heading .about-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    top: 27%;
+  }
+  .about-heading .about-heading__info {
+    top: 23%;
+  }
+  .projects-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .projects-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .projects-heading .projects-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 14vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .projects-heading .projects-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-heading .projects-heading__bg {
+    top: 35%;
+  }
+  .projects-heading .projects-heading__info {
+    top: 32%;
+  }
   .project-grid {
-    gap: 3rem;
+    gap: 3.5rem;
   }
   .project-card {
     gap: 5rem;
@@ -543,119 +697,278 @@ h3 {
   .project-card .project-card__div p button {
     width: 8rem;
   }
-  .contact p {
-    padding: 0.5rem 1rem;
+  .contact-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .contact-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact-heading .contact-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 13vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .contact-heading .contact-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .contact-heading .contact-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-heading .contact-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-heading .contact-heading__bg {
+    top: 35%;
+  }
+  .contact-heading .contact-heading__info {
+    top: 32%;
   }
 }
 
 @media screen and (min-width: 758px) {
   .menu-btn {
-    transform: scale(1.5);
-    top: 2.5rem;
+    transform: scale(1.25);
+    top: 2rem;
     right: 1.5rem;
   }
   .mobile-nav-bar {
-    height: 4.8rem;
+    height: 4.25rem;
   }
   .nav {
     font-size: 3rem;
   }
+  .nav .nav__menu {
+    margin-top: 2rem;
+  }
   .social-icons a i {
     transform: scale(1.5);
   }
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .about-heading .about-heading__bg {
-    margin: 7rem 4.75rem;
-    height: 13.5rem;
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 20vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
   }
   .about-heading .about-heading__info {
-    top: 35%;
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    margin: 7rem 4.75rem;
+    top: 20%;
+  }
+  .about-heading .about-heading__info {
+    top: 33%;
     margin: 3rem 5rem;
   }
   .about-heading .about-heading__info h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .about-heading .about-heading__info p {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .skills-tech .skills-tech__heading {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .skills-tech__grid {
     padding-top: 1rem;
   }
-  .skills-tech__grid .skills-tech__grid__card i {
-    transform: scale(1.75);
-    padding-top: 2rem;
-    margin-bottom: 2.2rem;
-  }
   .skills-tech__grid .skills-tech__grid__card img {
-    transform: scale(0.7);
-  }
-  .skills-tech__grid .skills-tech__grid__card .skill-title {
-    font-size: 1.75rem;
+    transform: scale(0.5);
+    margin-bottom: 0;
   }
   .skills-other .skills-other__heading {
     font-size: 1.75rem;
   }
   .skills-other .skills-other__skill {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
   .projects {
     margin-top: 1rem;
   }
+  .projects-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  }
+  .projects-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .projects-heading .projects-heading__bg {
-    margin: 5rem 4.75rem;
-    height: 10rem;
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 13vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .projects-heading .projects-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-heading .projects-heading__bg {
+    margin: 5rem 7.5rem;
+    top: 30%;
+    width: 70%;
   }
   .projects-heading .projects-heading__info {
     top: 35%;
     margin: 3rem 5rem;
   }
   .projects-heading .projects-heading__info h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .projects-heading .projects-heading__info p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   .project-grid {
     margin-top: 2.5rem;
-    gap: 6rem;
+    gap: 10rem;
   }
   .project-card .project-card__title {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+  }
+  .project-card .project-card__div {
+    height: 20rem;
   }
   .project-card .project-card__div div {
-    height: 8rem;
     top: 66%;
   }
   .project-card .project-card__div p {
-    top: 70%;
-    font-size: 1.5rem;
+    top: 68%;
+    font-size: 1.1rem;
     text-align: center;
+    padding: 0.29rem;
   }
   .project-card .project-card__div p button {
     width: 18rem;
     height: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .contact {
     margin-top: 1rem;
     height: 100vh;
   }
+  .contact-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 55vh;
+    width: 100%;
+  }
+  .contact-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .contact-heading .contact-heading__bg {
-    margin: 7rem 7.3rem;
-    height: 11rem;
-    width: 70%;
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 15vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
   }
   .contact-heading .contact-heading__info {
-    top: 35%;
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .contact-heading .contact-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-heading .contact-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-heading .contact-heading__bg {
+    margin: 7rem 12.5rem;
+    width: 50%;
+    top: 12.5%;
+  }
+  .contact-heading .contact-heading__info {
+    top: 27.5%;
     margin: 3rem 5rem;
   }
   .contact-heading .contact-heading__info h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .contact-heading .contact-heading__info p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   .contact-grid {
     margin-top: 5rem;
@@ -667,11 +980,11 @@ h3 {
     padding: 0.75rem;
   }
   .contact-card a i {
-    transform: scale(1.5);
+    transform: scale(0.9);
     padding: 0.75rem;
   }
   .contact-card span {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -681,23 +994,29 @@ h3 {
   }
   .nav {
     position: fixed;
+    width: 100%;
     top: 0;
     height: 3rem;
     transform: translateY(0);
   }
   .nav .nav__menu {
+    position: relative;
+    width: 100%;
     margin-top: 0;
     flex-direction: row;
     justify-content: flex-end;
   }
   .nav .nav__menu__item {
-    margin-right: 5rem;
+    margin: 0 1.5rem;
     font-size: 1rem;
     font-weight: normal;
   }
   .nav .nav__menu__item__link.logo {
-    display: inline;
-    margin-right: 42.5rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 1rem;
   }
   .nav .nav__menu__item__link.logo:hover {
     color: white;
@@ -719,7 +1038,7 @@ h3 {
     position: absolute;
     width: 80%;
     margin: 2.35rem;
-    height: 30vh;
+    height: 22.5vh;
     top: 25%;
     backdrop-filter: blur(10px);
     filter: brightness(25%);
@@ -743,8 +1062,10 @@ h3 {
   }
   .about-heading .about-heading__bg {
     margin: 2.35rem 7rem;
+    top: 35%;
   }
   .about-heading .about-heading__info {
+    top: 33%;
     margin: 2.35rem 7rem;
   }
   .about-heading .about-heading__info h2 {
@@ -807,7 +1128,7 @@ h3 {
     position: absolute;
     width: 80%;
     margin: 2.35rem;
-    height: 30vh;
+    height: 17vh;
     top: 25%;
     backdrop-filter: blur(10px);
     filter: brightness(25%);
@@ -830,11 +1151,12 @@ h3 {
     text-align: center;
   }
   .projects-heading .projects-heading__bg {
-    width: 50%;
-    margin: 2.35rem 20rem;
-    height: 10rem;
+    width: 55%;
+    margin: 2.35rem 15rem;
+    top: 40%;
   }
   .projects-heading .projects-heading__info {
+    top: 38%;
     margin: 2.35rem 7rem;
   }
   .projects-heading .projects-heading__info h2 {
@@ -842,7 +1164,326 @@ h3 {
     font-size: 2rem;
   }
   .projects-heading .projects-heading__info p {
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .project-card {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .project-card .project-card__title {
+    font-size: 1.25rem;
+  }
+  .project-card .project-card__div {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+  }
+  .project-card .project-card__div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-card .project-card__div div {
+    position: absolute;
+    top: 72.5%;
+    width: 100%;
+    height: 8rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    filter: brightness(60%);
+  }
+  .project-card .project-card__div p {
+    position: absolute;
+    line-height: 1.2;
+    top: 75%;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    z-index: 0;
+  }
+  .project-card .project-card__div p button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: large;
+    margin: 1rem 0.5rem;
+  }
+  .contact {
+    margin-top: 0;
+  }
+  .contact-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+  }
+  .contact-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact-heading .contact-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 20vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .contact-heading .contact-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .contact-heading .contact-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-heading .contact-heading__info p {
     font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-heading .contact-heading__bg {
+    width: 42.5%;
+    margin: 5rem 20rem;
+    top: 20%;
+  }
+  .contact-heading .contact-heading__info {
+    margin: 5rem 7.5rem;
+    top: 20%;
+  }
+  .contact-heading .contact-heading__info h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .contact-heading .contact-heading__info p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  .contact-grid {
+    margin-top: 2rem;
+  }
+  .contact-card a i {
+    transform: scale(1);
+  }
+  .contact-card i {
+    transform: scale(1);
+  }
+  .contact-card span {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .nav .nav__menu__item__link.logo {
+    margin-right: 40rem;
+  }
+  .projects-heading .projects-heading__bg {
+    width: 42%;
+    margin: 2.35rem 23rem;
+  }
+  .project-grid {
+    gap: 2rem;
+  }
+  .project-card {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .project-card .project-card__div p button {
+    width: 15rem;
+  }
+  .contact-heading .contact-heading__bg {
+    width: 28%;
+    margin: 2.35rem 30rem;
+    top: 32.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-nav-bar {
+    display: none;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+    transform: translateY(0);
+  }
+  .nav .nav__menu {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav .nav__menu__item {
+    margin: auto 2.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  .nav .nav__menu__item__link.logo {
+    display: inline;
+  }
+  .nav .nav__menu__item__link.logo:hover {
+    color: white;
+  }
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-heading .about-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 22.5vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .about-heading .about-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    margin: 2.35rem 10rem;
+    top: 30%;
+  }
+  .about-heading .about-heading__info {
+    margin: 2.35rem 10rem;
+    top: 30%;
+  }
+  .about-heading .about-heading__info h2 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1;
+  }
+  .skills-flex {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .skills-tech {
+    border-right: 1px solid black;
+  }
+  .skills-tech .skills-tech__heading {
+    font-weight: normal;
+  }
+  .skills-tech__grid {
+    width: 80%;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card img {
+    transform: scale(0.5);
+    padding: 0;
+    margin-bottom: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card__title {
+    font-size: 1.2rem;
+  }
+  .skills-other .skills-other__heading {
+    margin-bottom: 4rem;
+    font-weight: normal;
+  }
+  .skills-other .skills-other__skill {
+    font-size: 1.3rem;
+  }
+  .projects {
+    margin-top: 0rem;
+  }
+  .projects-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .projects-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .projects-heading .projects-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 17vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .projects-heading .projects-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-heading .projects-heading__bg {
+    width: 45%;
+    margin: 2.35rem 23rem;
+    top: 35%;
+  }
+  .projects-heading .projects-heading__info {
+    margin: 2.35rem 7rem;
+    top: 33%;
+  }
+  .projects-heading .projects-heading__info h2 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.1;
   }
@@ -869,22 +1510,19 @@ h3 {
   }
   .project-card .project-card__div div {
     position: absolute;
-    top: 53%;
+    top: 59%;
     width: 100%;
     height: 8rem;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    filter: brightness(60%);
   }
   .project-card .project-card__div p {
     position: absolute;
     line-height: 1.2;
-    top: 58%;
+    top: 62%;
     z-index: 2;
     text-align: center;
     color: white;
-    font-size: 1.1rem;
-    padding: 0 0.09rem;
+    font-size: 1.3rem;
+    padding: 0 0.3rem;
     z-index: 0;
   }
   .project-card .project-card__div p button {
@@ -913,7 +1551,7 @@ h3 {
     position: absolute;
     width: 80%;
     margin: 2.35rem;
-    height: 22vh;
+    height: 20vh;
     top: 25%;
     backdrop-filter: blur(10px);
     filter: brightness(25%);
@@ -936,19 +1574,18 @@ h3 {
     text-align: center;
   }
   .contact-heading .contact-heading__bg {
-    width: 50%;
-    margin: 5rem 20rem;
-    height: 10rem;
+    width: 35%;
+    margin: 5rem 27rem;
   }
   .contact-heading .contact-heading__info {
     margin: 5rem 7rem;
   }
   .contact-heading .contact-heading__info h2 {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   .contact-heading .contact-heading__info p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.1;
   }
@@ -963,6 +1600,249 @@ h3 {
   }
   .contact-card span {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 2560px) and (min-width: 1440px) {
+  .nav {
+    height: 6rem;
+  }
+  .nav .nav__menu__item {
+    font-size: 2.25rem;
+  }
+  .nav .nav__menu__item__link.logo {
+    margin: -0.5rem 0 0rem 2rem;
+  }
+  .about-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .about-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-heading .about-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 20vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .about-heading .about-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .about-heading .about-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-heading .about-heading__bg {
+    margin: 5rem 40rem;
+    top: 30%;
+    width: 50%;
+  }
+  .about-heading .about-heading__info {
+    margin: 2.35rem 40rem;
+    top: 35%;
+    width: 50%;
+  }
+  .about-heading .about-heading__info h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .about-heading .about-heading__info p {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1;
+  }
+  .skills-flex {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .skills-tech {
+    border-right: 1px solid black;
+  }
+  .skills-tech .skills-tech__heading {
+    font-size: 2.5rem;
+  }
+  .skills-tech__grid {
+    width: 80%;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card img {
+    transform: scale(0.5);
+    padding: 0;
+    margin-bottom: 0rem;
+  }
+  .skills-tech__grid .skills-tech__grid__card__title {
+    font-size: 2.1rem;
+  }
+  .skills-other .skills-other__heading {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+  .skills-other .skills-other__skill {
+    font-size: 2.1rem;
+  }
+  .projects {
+    margin-top: 0rem;
+  }
+  .projects-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+  }
+  .projects-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .projects-heading .projects-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 15vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .projects-heading .projects-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-heading .projects-heading__bg {
+    width: 40%;
+    margin: 2.35rem 50rem;
+    top: 42.5%;
+  }
+  .projects-heading .projects-heading__info {
+    margin: 2.35rem 17.5rem;
+    top: 43%;
+  }
+  .projects-heading .projects-heading__info h2 {
+    font-size: 3rem;
+  }
+  .projects-heading .projects-heading__info p {
+    font-size: 2rem;
+  }
+  .project-card .project-card__title {
+    font-size: 2rem;
+  }
+  .project-card .project-card__div {
+    height: 38vh;
+  }
+  .project-card .project-card__div div {
+    top: 69%;
+    height: 10rem;
+  }
+  .project-card .project-card__div p {
+    top: 70%;
+    font-size: 2rem;
+  }
+  .project-card .project-card__div p button {
+    width: 20rem;
+    font-size: 2rem;
+  }
+  .contact-heading {
+    background: white;
+    padding-top: 3rem;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+  }
+  .contact-heading img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact-heading .contact-heading__bg {
+    background: transparent;
+    position: absolute;
+    width: 80%;
+    margin: 2.35rem;
+    height: 13vh;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    filter: brightness(25%);
+  }
+  .contact-heading .contact-heading__info {
+    color: white;
+    position: absolute;
+    height: 25vh;
+    top: 25%;
+    width: 80%;
+    margin: 2.35rem;
+    padding: 1rem;
+  }
+  .contact-heading .contact-heading__info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-heading .contact-heading__info p {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-heading .contact-heading__bg {
+    width: 27%;
+    margin: 5rem 60rem;
+    top: 35%;
+  }
+  .contact-heading .contact-heading__info {
+    margin: 5rem 17.5rem;
+    top: 35%;
+  }
+  .contact-heading .contact-heading__info h2 {
+    font-size: 3rem;
+  }
+  .contact-heading .contact-heading__info p {
+    font-size: 2rem;
+  }
+  .contact-grid {
+    margin-top: 2rem;
+  }
+  .contact-card a i {
+    transform: scale(2);
+  }
+  .contact-card i {
+    transform: scale(2);
+  }
+  .contact-card span {
+    padding-top: 0.5rem;
+    font-size: 2.25rem;
   }
 }
 

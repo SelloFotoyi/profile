@@ -43,8 +43,9 @@ $mobile-m: 360px;
 $mobile-l: 412px;
 $tablet: 758px;
 $laptop: 1024px;
+$laptop-m: 1260px;
 $laptop-l: 1440px;
-$desktop_4k: 2650px;
+$desktop_4k: 2560px;
 
 @mixin media-mobile-m {
   @media screen and (min-width: $mobile-m) {
@@ -71,8 +72,13 @@ $desktop_4k: 2650px;
     @content;
   }
 }
+@mixin media-laptop-m {
+  @media screen and (min-width: $laptop-m) {
+    @content;
+  }
+}
 @mixin media-4k {
-  @media screen and (min-width: $dektop_4k) {
+  @media screen and (min-width: $desktop_4k) {
     @content;
   }
 }

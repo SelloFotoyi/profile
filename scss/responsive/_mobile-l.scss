@@ -1,0 +1,48 @@
+@include media-mobile-l {
+  .about-heading {
+    @include section-heading-config(65vh, 23vh, 25vh);
+    #{&}__bg {
+      top: 27%;
+    }
+    #{&}__info {
+      top: 23%;
+    }
+  }
+  .projects-heading {
+    @include section-heading-config(65vh, 14vh, 25vh);
+    #{&}__bg {
+      top: 35%;
+    }
+    #{&}__info {
+      top: 32%;
+    }
+  }
+  .project-grid {
+    gap: 3.5rem;
+  }
+  .project-card {
+    gap: 5rem;
+    #{&}__div {
+      div {
+        height: 7.25rem;
+        top: 58%;
+      }
+      p {
+        top: 62.5%;
+        padding: 0 0.1rem;
+        button {
+          width: 8rem;
+        }
+      }
+    }
+  }
+  .contact-heading {
+    @include section-heading-config(65vh, 13vh, 25vh);
+    #{&}__bg {
+      top: 35%;
+    }
+    #{&}__info {
+      top: 32%;
+    }
+  }
+}

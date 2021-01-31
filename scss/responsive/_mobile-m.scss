@@ -1,0 +1,41 @@
+@include media-mobile-m {
+  .about-heading {
+    @include section-heading-config(65vh, 27vh, 25vh);
+    #{&}__bg {
+      top: 28%;
+    }
+    #{&}__info {
+      top: 25%;
+    }
+  }
+
+  .skills-tech__grid {
+    grid-template-columns: repeat(3, 1fr);
+    #{&}__card {
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+  .projects-heading {
+    #{&}__bg {
+      top: 33.5%;
+    }
+  }
+  .project-card {
+    gap: 5rem;
+    #{&}__div {
+      height: 36vh;
+      div {
+        height: 7.5rem;
+        top: 56%;
+      }
+      p {
+        padding: 0 0.1rem;
+        button {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,13 @@
   height: 100%;
 }
 .contact-heading {
-  @include section-heading-config(65vh, 22vh, 25vh);
+  @include section-heading-config(65vh, 15vh, 25vh);
+  #{&}__bg {
+    top: 35%;
+  }
+  #{&}__info {
+    top: 32%;
+  }
 }
 
 .contact-grid {

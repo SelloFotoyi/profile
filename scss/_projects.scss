@@ -5,12 +5,12 @@
   height: 100%;
 }
 .projects-heading {
-  @include section-heading-config(65vh, 20vh, 25vh);
+  @include section-heading-config(65vh, 17vh, 25vh);
   #{&}__bg {
-    top: 30%;
+    top: 35%;
   }
   #{&}__info {
-    top: 28%;
+    top: 32%;
   }
 }
 
@@ -19,7 +19,7 @@
   margin: 1rem auto 5rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5rem;
+  gap: 4.5rem;
 }
 
 .project-card {
@@ -61,7 +61,7 @@
       text-align: center;
       color: set-color("secondary");
       font-size: 1.1rem;
-      padding: 0 0.09rem;
+      padding: 0 0.5rem;
       z-index: 0;
       button {
         width: 6.5rem;
