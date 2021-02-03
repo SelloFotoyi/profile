@@ -14,11 +14,32 @@
 
     font-size: 3rem;
   }
-  .social-icons {
-    a {
-      i {
-        transform: scale(1.5);
+  .home-splash {
+    h2 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+    h4 {
+      margin-top: 0.75rem;
+      font-size: 1.75rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  footer {
+    .social-icons {
+      width: 40vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .fab {
+        transform: scale(0.9);
+        margin: 0 3rem;
       }
+    }
+    .copy {
+      font-size: 1rem;
     }
   }
   .about-heading {
@@ -70,13 +91,12 @@
   .projects {
     margin-top: 1rem;
   }
-
   .projects-heading {
     @include section-heading-config(65vh, 13vh, 25vh);
     #{&}__bg {
-      margin: 5rem 7.5rem;
+      margin: 5rem 6.2rem;
       top: 30%;
-      width: 70%;
+      width: 75%;
     }
     #{&}__info {
       top: 35%;
@@ -92,7 +112,7 @@
 
   .project-grid {
     margin-top: 2.5rem;
-    gap: 10rem;
+    gap: 5rem;
   }
   .project-card {
     #{&}__title {

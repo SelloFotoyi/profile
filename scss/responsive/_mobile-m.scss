@@ -17,17 +17,22 @@
       }
     }
   }
+
   .projects-heading {
     #{&}__bg {
       top: 33.5%;
     }
   }
+  .project-grid {
+    gap: 0rem;
+  }
   .project-card {
-    gap: 5rem;
+    height: 50vh;
+    margin-bottom: 1rem;
     #{&}__div {
-      height: 36vh;
+      height: 42vh;
       div {
-        height: 7.5rem;
+        height: 7.75rem;
         top: 56%;
       }
       p {

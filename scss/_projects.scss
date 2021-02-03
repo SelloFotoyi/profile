@@ -16,37 +16,39 @@
 
 .project-grid {
   width: 90%;
-  margin: 1rem auto 5rem auto;
+  margin: 2rem auto 5rem auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 4.5rem;
 }
 
 .project-card {
+  position: relative;
+  @include transition-ease;
   width: 85vw;
-  height: 40vh;
-  margin: 0 auto;
-
+  height: 55vh;
+  margin: auto;
+  &:hover {
+    cursor: pointer;
+  }
   #{&}__title {
     margin: 0 auto;
   }
   #{&}__div {
     position: relative;
     width: 100%;
-    height: 42vh;
-
+    height: 50vh;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      // z-index: 1;
     }
     div {
       position: absolute;
       top: 53%;
       left: 0;
       width: 100%;
-      height: 8rem;
+      height: 9.4rem;
       background: transparent;
       backdrop-filter: blur(10px);
       filter: brightness(60%);

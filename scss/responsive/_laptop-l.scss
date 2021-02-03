@@ -27,6 +27,17 @@
       }
     }
   }
+  footer {
+    .social-icons {
+      .fab {
+        transform: scale(1);
+        margin: 0 1rem;
+      }
+    }
+    .copy {
+      font-size: 1.25rem;
+    }
+  }
   .about-heading {
     @include section-heading-config(80vh, 22.5vh, 25vh);
     #{&}__bg {
@@ -90,8 +101,8 @@
   .projects-heading {
     @include section-heading-config(80vh, 17vh, 25vh);
     #{&}__bg {
-      width: 45%;
-      margin: 2.35rem 23rem;
+      width: 48%;
+      margin: 2.35rem 21.5rem;
       top: 35%;
     }
     #{&}__info {
@@ -110,11 +121,11 @@
   }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .project-card {
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     #{&}__title {
       //  margin: 0 auto;
       font-size: 1.25rem;

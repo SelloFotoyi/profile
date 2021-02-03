@@ -6,7 +6,7 @@
 }
 
 .about-heading {
-  @include section-heading-config(65vh, 30vh, 25vh);
+  @include section-heading-config(65vh, 32vh, 25vh);
   #{&}__bg {
     top: 20%;
   }
@@ -29,9 +29,8 @@ h3 {
   margin: 1rem auto;
   width: 90vw;
   #{&}__heading {
-    width: 50%;
-    margin: 0 auto;
-    border-bottom: 1px solid set-color("primary");
+    @include sm_heading;
+    // margin-top: 1rem;
   }
 }
 
@@ -50,7 +49,9 @@ h3 {
     font-size: 1.1rem;
     text-align: center;
     i {
-      padding: 0.5rem;
+      padding-top: 1rem;
+      transform: scale(1.5);
+      margin-bottom: 1.9rem;
     }
 
     img {

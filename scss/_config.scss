@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Philosopher:wght@700&display=swap");
 $colors: (
   "primary": black,
   "secondary": white,
@@ -10,6 +12,7 @@ $colors: (
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin transition-ease {
@@ -20,6 +23,7 @@ $colors: (
   width: 50%;
   margin: 0 auto;
   border-bottom: 1px solid set-color("primary");
+  font-weight: normal;
 }
 @mixin section-heading {
   margin: 0 auto 2rem auto;
@@ -87,7 +91,7 @@ $desktop_4k: 2560px;
   background: set-color("secondary");
   padding-top: 3rem;
   position: relative;
-  height: $header-height; //65vh;
+  height: $header-height;
   width: 100%;
   img {
     width: 100%;
@@ -99,7 +103,7 @@ $desktop_4k: 2560px;
     position: absolute;
     width: 80%;
     margin: 2.35rem;
-    height: $bg-height; //30vh;
+    height: $bg-height;
     top: 25%;
     backdrop-filter: blur(10px);
     filter: brightness(25%);
@@ -107,7 +111,7 @@ $desktop_4k: 2560px;
   #{&}__info {
     color: set-color("secondary");
     position: absolute;
-    height: $info-height; //25vh;
+    height: $info-height;
     top: 25%;
     width: 80%;
     margin: 2.35rem;
@@ -118,7 +122,6 @@ $desktop_4k: 2560px;
     p {
       font-size: 1rem;
       margin: 0 auto;
-      //  padding: 2rem;
       text-align: center;
     }
   }

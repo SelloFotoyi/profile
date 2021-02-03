@@ -13,6 +13,32 @@
         }
       }
     }
+    .home-splash {
+      h2 {
+        font-size: 12.5rem;
+      }
+      h3 {
+        font-size: 3.75rem;
+      }
+      h4 {
+        margin-top: 2.25rem;
+        font-size: 3.75rem;
+        letter-spacing: 0.75rem;
+      }
+    }
+    footer {
+      height: 10rem;
+      .social-icons {
+        .fab {
+          transform: scale(2);
+          margin: 0 3rem;
+        }
+      }
+      .copy {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+      }
+    }
     .about-heading {
       @include section-heading-config(80vh, 20vh, 25vh);
       #{&}__bg {
@@ -52,6 +78,11 @@
       margin: 0 auto;
       gap: 0rem;
       #{&}__card {
+        i {
+          transform: scale(2.5);
+          margin-bottom: 7rem;
+          padding-top: 3rem;
+        }
         img {
           transform: scale(0.5);
           padding: 0;
