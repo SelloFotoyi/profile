@@ -1,20 +1,9 @@
 @include media-mobile-l {
   .about-heading {
-    @include section-heading-config(65vh, 23vh, 25vh);
-    #{&}__bg {
-      top: 27%;
-    }
     #{&}__info {
-      top: 23%;
-    }
-  }
-  .projects-heading {
-    @include section-heading-config(65vh, 14vh, 25vh);
-    #{&}__bg {
-      top: 35%;
-    }
-    #{&}__info {
-      top: 32%;
+      p {
+        padding: 1rem;
+      }
     }
   }
   .project-grid {
@@ -33,15 +22,6 @@
           width: 8rem;
         }
       }
-    }
-  }
-  .contact-heading {
-    @include section-heading-config(65vh, 13vh, 25vh);
-    #{&}__bg {
-      top: 35%;
-    }
-    #{&}__info {
-      top: 32%;
     }
   }
 }

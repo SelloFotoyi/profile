@@ -8,17 +8,14 @@
     height: 3.5rem;
     transform: translateY(0);
     #{&}__menu {
-      margin-top: 0;
-      flex-direction: row;
-      justify-content: flex-end;
       &__item {
         margin: auto 2.5rem;
         font-size: 1.2rem;
         font-weight: normal;
         &__link {
           &.logo {
-            display: inline;
-            //  margin-right: 42.5rem;
+            font-size: 1.6;
+            margin-top: auto;
             &:hover {
               color: rgba(set-color("secondary"), 1);
             }
@@ -39,22 +36,15 @@
     }
   }
   .about-heading {
-    @include section-heading-config(80vh, 22.5vh, 25vh);
-    #{&}__bg {
-      margin: 2.35rem 10rem;
-      top: 30%;
-    }
     #{&}__info {
-      margin: 2.35rem 10rem;
-      top: 30%;
       h2 {
-        margin-bottom: 1rem;
         font-size: 2.25rem;
       }
       p {
         font-size: 1.3rem;
         font-weight: normal;
         line-height: 1;
+        padding: 0 5rem;
       }
     }
   }
@@ -100,34 +90,27 @@
   }
   .projects-heading {
     @include section-heading-config(80vh, 17vh, 25vh);
-    #{&}__bg {
-      width: 48%;
-      margin: 2.35rem 21.5rem;
-      top: 35%;
-    }
+
     #{&}__info {
-      margin: 2.35rem 7rem;
-      top: 33%;
       h2 {
-        margin-bottom: 1rem;
         font-size: 2.25rem;
       }
       p {
         font-size: 1.3rem;
         font-weight: normal;
         line-height: 1.1;
+        padding: 0 5rem;
       }
     }
   }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .project-card {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     #{&}__title {
-      //  margin: 0 auto;
       font-size: 1.25rem;
     }
     #{&}__div {
@@ -171,15 +154,8 @@
     margin-top: 0;
   }
   .contact-heading {
-    @include section-heading-config(80vh, 20vh, 25vh);
-    #{&}__bg {
-      width: 35%;
-      margin: 5rem 27rem;
-    }
     #{&}__info {
-      margin: 5rem 7rem;
       h2 {
-        margin-bottom: 1rem;
         font-size: 2.25rem;
       }
       p {
@@ -188,8 +164,6 @@
         line-height: 1.1;
       }
     }
-  }
-  .contact-grid {
   }
   .contact-grid {
     margin-top: 2rem;

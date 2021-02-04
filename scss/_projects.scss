@@ -5,13 +5,7 @@
   height: 100%;
 }
 .projects-heading {
-  @include section-heading-config(65vh, 17vh, 25vh);
-  #{&}__bg {
-    top: 35%;
-  }
-  #{&}__info {
-    top: 32%;
-  }
+  @include section-heading-config(65vh, 0, 0);
 }
 
 .project-grid {
@@ -51,9 +45,15 @@
       height: 9.4rem;
       background: transparent;
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      -ms-backdrop-filter: blur(10px);
+      -o-backdrop-filter: blur(10px);
       filter: brightness(60%);
-      // opacity: 0.5;
-      // z-index: 1;
+      -webkit-filter: brightness(60%);
+      -moz-filter: brightness(60%);
+      -ms-filter: brightness(60%);
+      -o-filter: brightness(60%);
     }
     p {
       position: absolute;

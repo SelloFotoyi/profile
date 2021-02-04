@@ -7,7 +7,8 @@
           font-size: 2.25rem;
           &__link {
             &.logo {
-              margin: -0.5rem 0 0rem 2rem;
+              margin-top: auto;
+              font-size: 2.75rem;
             }
           }
         }
@@ -40,24 +41,15 @@
       }
     }
     .about-heading {
-      @include section-heading-config(80vh, 20vh, 25vh);
-      #{&}__bg {
-        margin: 5rem 40rem;
-        top: 30%;
-        width: 50%;
-      }
       #{&}__info {
-        margin: 2.35rem 40rem;
-        top: 35%;
-        width: 50%;
         h2 {
-          margin-bottom: 1rem;
           font-size: 3rem;
         }
         p {
           font-size: 2rem;
           font-weight: normal;
           line-height: 1;
+          padding: 0 20rem;
         }
       }
     }
@@ -107,15 +99,7 @@
       margin-top: 0rem;
     }
     .projects-heading {
-      @include section-heading-config(80vh, 15vh, 25vh);
-      #{&}__bg {
-        width: 40%;
-        margin: 2.35rem 50rem;
-        top: 42.5%;
-      }
       #{&}__info {
-        margin: 2.35rem 17.5rem;
-        top: 43%;
         h2 {
           font-size: 3rem;
         }
@@ -145,15 +129,7 @@
       }
     }
     .contact-heading {
-      @include section-heading-config(60vh, 13vh, 25vh);
-      #{&}__bg {
-        width: 27%;
-        margin: 5rem 60rem;
-        top: 35%;
-      }
       #{&}__info {
-        margin: 5rem 17.5rem;
-        top: 35%;
         h2 {
           font-size: 3rem;
         }

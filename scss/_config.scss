@@ -89,40 +89,48 @@ $desktop_4k: 2560px;
 
 @mixin section-heading-config($header-height, $bg-height, $info-height) {
   background: set-color("secondary");
-  padding-top: 3rem;
+  margin-top: 3rem;
   position: relative;
+  top: 0;
+  left: 0;
   height: $header-height;
   width: 100%;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
   }
   #{&}__bg {
-    background: transparent;
     position: absolute;
-    width: 80%;
-    margin: 2.35rem;
-    height: $bg-height;
-    top: 25%;
-    backdrop-filter: blur(10px);
-    filter: brightness(25%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
+    background: set-color("primary");
   }
   #{&}__info {
     color: set-color("secondary");
     position: absolute;
-    height: $info-height;
-    top: 25%;
-    width: 80%;
-    margin: 2.35rem;
-    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h2 {
       font-size: 1.5rem;
     }
     p {
       font-size: 1rem;
-      margin: 0 auto;
       text-align: center;
+      padding: 0 0.5rem;
+      line-height: 1.1;
     }
   }
 }

@@ -1,11 +1,9 @@
 @include media-mobile-m {
   .about-heading {
-    @include section-heading-config(65vh, 27vh, 25vh);
-    #{&}__bg {
-      top: 28%;
-    }
     #{&}__info {
-      top: 25%;
+      p {
+        padding: 0 0.7rem;
+      }
     }
   }
 
@@ -19,12 +17,9 @@
   }
 
   .projects-heading {
-    #{&}__bg {
-      top: 33.5%;
-    }
   }
   .project-grid {
-    gap: 0rem;
+    gap: 2rem;
   }
   .project-card {
     height: 50vh;

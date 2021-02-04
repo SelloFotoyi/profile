@@ -9,11 +9,14 @@
     height: 3rem;
     transform: translateY(0);
     #{&}__menu {
-      position: relative;
+      position: absolute;
+      top: 0;
+      margin-top: auto;
       width: 100%;
-      margin-top: 0;
+      height: 100%;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
       &__item {
         margin: 0 1.5rem;
         font-size: 1rem;
@@ -25,6 +28,8 @@
             left: 0;
             top: 0;
             margin-left: 1rem;
+            margin-top: auto;
+            font-size: 1.5rem;
             &:hover {
               color: rgba(set-color("secondary"), 1);
             }
@@ -62,16 +67,8 @@
     }
   }
   .about-heading {
-    @include section-heading-config(80vh, 22.5vh, 25vh);
-    #{&}__bg {
-      margin: 2.35rem 7rem;
-      top: 35%;
-    }
     #{&}__info {
-      top: 33%;
-      margin: 2.35rem 7rem;
       h2 {
-        margin-bottom: 1rem;
         font-size: 2rem;
       }
       p {
@@ -122,17 +119,8 @@
     margin-top: 0rem;
   }
   .projects-heading {
-    @include section-heading-config(80vh, 17vh, 25vh);
-    #{&}__bg {
-      width: 55%;
-      margin: 2.35rem 15rem;
-      top: 40%;
-    }
     #{&}__info {
-      top: 38%;
-      margin: 2.35rem 7rem;
       h2 {
-        margin-bottom: 1rem;
         font-size: 2rem;
       }
       p {
@@ -144,11 +132,11 @@
   }
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
   .project-card {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     #{&}__title {
       font-size: 1.25rem;
     }
@@ -198,17 +186,8 @@
     margin-top: 0;
   }
   .contact-heading {
-    @include section-heading-config(60vh, 20vh, 25vh);
-    #{&}__bg {
-      width: 42.5%;
-      margin: 5rem 20rem;
-      top: 20%;
-    }
     #{&}__info {
-      margin: 5rem 7.5rem;
-      top: 20%;
       h2 {
-        margin-bottom: 1.5rem;
         font-size: 2rem;
       }
       p {
@@ -218,8 +197,7 @@
       }
     }
   }
-  .contact-grid {
-  }
+
   .contact-grid {
     margin-top: 2rem;
   }

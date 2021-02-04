@@ -6,13 +6,7 @@
 }
 
 .about-heading {
-  @include section-heading-config(65vh, 32vh, 25vh);
-  #{&}__bg {
-    top: 20%;
-  }
-  #{&}__info {
-    top: 17%;
-  }
+  @include section-heading-config(65vh, 0, 0);
 }
 
 h2,

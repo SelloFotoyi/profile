@@ -10,31 +10,19 @@
       }
     }
   }
-  .projects-heading {
-    #{&}__bg {
-      width: 42%;
-      margin: 2.35rem 23rem;
-    }
-  }
+
   .project-grid {
-    gap: 2rem;
+    gap: 1rem;
   }
   .project-card {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
     #{&}__div {
       p {
         button {
           width: 15rem;
         }
       }
-    }
-  }
-  .contact-heading {
-    #{&}__bg {
-      width: 28%;
-      margin: 2.35rem 30rem;
-      top: 32.5%;
     }
   }
 }
