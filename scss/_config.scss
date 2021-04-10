@@ -1,136 +1,60 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Philosopher:wght@700&display=swap");
-$colors: (
-  "primary": black,
-  "secondary": white,
-  "grey-1": #858585,
-  "grey-2": #979595,
-  "alternate": #76f186,
-);
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+$faint-black: rgba($color: #000000, $alpha: 0.75);
+$theme_secondary: #1CC71C;
+$theme_primary: #080633;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+@mixin transition-ease{
+    transition: 1s all;
 }
-
-@mixin sm_heading {
-  width: 50%;
-  margin: 0 auto;
-  border-bottom: 1px solid set-color("primary");
-  font-weight: normal;
-}
-@mixin section-heading {
-  margin: 0 auto 2rem auto;
-}
-
-@function set-color($color) {
-  @if $color == "primary" {
-    @return map-get($colors, primary);
-  } @else if $color == "secondary" {
-    @return map-get($colors, secondary);
-  } @else if $color == "grey-1" {
-    @return map-get($colors, grey-1);
-  } @else if $color == "grey-2" {
-    @return map-get($colors, grey-2);
-  } @else if $color == "alternate" {
-    @return map-get($colors, alternate);
-  }
-}
-
-$mobile-m: 360px;
-$mobile-l: 412px;
-$tablet: 758px;
-$laptop: 1024px;
-$laptop-m: 1260px;
-$laptop-l: 1440px;
-$desktop_4k: 2560px;
-
-@mixin media-mobile-m {
-  @media screen and (min-width: $mobile-m) {
-    @content;
-  }
-}
-@mixin media-mobile-l {
-  @media screen and (min-width: $mobile-l) {
-    @content;
-  }
-}
-@mixin media-tablet {
-  @media screen and (min-width: $tablet) {
-    @content;
-  }
-}
-@mixin media-laptop {
-  @media screen and (min-width: $laptop) {
-    @content;
-  }
-}
-@mixin media-laptop-l {
-  @media screen and (min-width: $laptop-l) {
-    @content;
-  }
-}
-@mixin media-laptop-m {
-  @media screen and (min-width: $laptop-m) {
-    @content;
-  }
-}
-@mixin media-4k {
-  @media screen and (min-width: $desktop_4k) {
-    @content;
-  }
-}
-
-@mixin section-heading-config($header-height, $bg-height, $info-height) {
-  background: set-color("secondary");
-  margin-top: 3rem;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: $header-height;
-  width: 100%;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-  #{&}__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: 0;
-    background: set-color("primary");
-  }
-  #{&}__info {
-    color: set-color("secondary");
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@mixin center{
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    h2 {
-      font-size: 1.5rem;
+}
+
+@mixin img-props{
+    width: 100%; 
+    height:100%; 
+    object-fit: cover;
+}
+@mixin btn{
+    background: $faint-black;
+    color: white;
+    height: 100%; 
+    width: 50%; 
+    text-align: center;
+    margin: 0 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer; 
+
+    &:hover{
+        @include transition-ease;
+        background: white;
+        color: black;
     }
-    p {
-      font-size: 1rem;
-      text-align: center;
-      padding: 0 0.5rem;
-      line-height: 1.1;
+}
+@mixin header-style{
+    width: 100%; 
+    margin: 4.5rem 0 1.5rem 0;
+    text-align: center;
+    font-size: 2.5rem; 
+    .first{
+        padding-bottom: 0.5rem;
+        border-bottom: 5.5px solid $theme_secondary;
     }
-  }
+    .last{
+        color:$theme_secondary;
+        padding-bottom: 0.5rem;
+        border-top: 5.5px solid black;
+    }
 }

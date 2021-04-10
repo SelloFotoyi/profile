@@ -1,72 +1,215 @@
-.about {
-  padding-top: 0rem;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
+.about{
+    width: 100%;
+    &-header{
+        width: 95%; 
+        margin: 2.5rem auto 0.5rem auto; 
+        height: 60vh;
+        display:flex; 
+        flex-direction: column;
+        &__bg{
+            width: 100%; 
+            flex-basis: 50%;
+            background: url('../assets/about-svg.svg') center/cover no-repeat;
+        }
+        &__info{
+            width: 90%; 
+            margin: 1.5rem auto; 
+            text-align: center; 
+            line-height:1.25;
 
-.about-heading {
-  @include section-heading-config(65vh, 0, 0);
-}
-
-h2,
-h3 {
-  text-align: center;
-  padding: 0.5rem;
-}
-
-.alt-text {
-  color: set-color("alternate");
-}
-
-.skills-tech {
-  margin: 1rem auto;
-  width: 90vw;
-  #{&}__heading {
-    @include sm_heading;
-    // margin-top: 1rem;
-  }
-}
-
-.skills-tech__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  z-index: 0;
-
-  #{&}__card {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    text-align: center;
-    i {
-      padding-top: 1rem;
-      transform: scale(1.5);
-      margin-bottom: 1.9rem;
+        }
     }
+    &-skills{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+        h2{
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        &__tech{
+            width: 100%;
+        }
+        &__activities{
+            width: 80%; 
+            margin: 2rem auto;
+            &__container{
+                width: 100%; 
+                margin-top: 1.5rem;
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                >div{ 
+                    border: 1px solid transparent;
+                    padding: 1rem 0.5rem;
+                    margin-top: 0.5rem;
+                    border-radius: 1.5rem;
+                }
+                i{
+                    color: $faint-black;
+                    margin-bottom: 0.5rem;
+                }
+                .counter{
+                    font-size: 1.5rem;
+                    margin: 0.5rem 0;
+                    font-weight: bold;
+                }
+                h3{
+                    margin: 0.5rem 0 0.5rem 0;
+                }
+            }
 
-    img {
-      transform: scale(0.9);
-      margin: 0.75rem 0;
-      width: 50%;
-      object-fit: cover;
+        }
     }
-  }
 }
 
-.skills-other {
-  width: 80%;
-  margin: 0 auto 1rem auto;
-  #{&}__heading {
-    @include sm_heading;
-    margin-top: 1rem;
-  }
-  #{&}__skill {
-    margin: 1.5rem auto 0.5rem auto;
-    text-align: center;
-    font-size: 1.1rem;
-  }
-}
+.wrapper{
+    width: 200px; 
+    height: 200px;
+    margin: 15% auto;
+ }
+ .box-area{
+     animation: animate 10s ease-in-out infinite;
+     transform-style: preserve-3d;
+     transform-origin: 100px 100px 0;
+     width: 200px; 
+     height: 200px;
+     position: relative;
+     div{
+        position: absolute;
+        width: 200px; 
+        height: 200px;
+        line-height: 200px;
+     }
+     .box1{
+        @include center; 
+        background-image: url('../assets/html5-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position:center center; 
+        background-color: white;
+        transform: translateZ(100px);
+        >span{ 
+            color: white; 
+            font-size: 2rem; 
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+     .box2{
+        @include center; 
+        background-image: url('../assets/css3-alt-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position:center center; 
+        background-color: white;
+        transform: rotateY(90deg) translateZ(100px);
+        >span{ 
+            color: white; 
+            font-size: 2rem;
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+     .box3{
+        @include center; 
+        background-image: url('../assets/js-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position:center center; 
+        background-color: white;
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        >span{ 
+            color: white; 
+            font-size: 2rem;
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+     .box4{
+        @include center;
+        background-image: url('../assets/sass-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position:center center;
+        background-color: white; 
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        >span{ 
+            color: white; 
+            font-size: 2rem;
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+     .box5{
+        @include center; 
+        background-image: url('../assets/react-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-color: white;
+        background-position:center center; 
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        >span{ 
+            color: white; 
+            font-size: 2rem;
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+     .box6{
+        @include center; 
+        background-image: url('../assets/git-alt-brands.svg'); 
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position:center center; 
+        background-color: white;
+        transform: rotateX(-90deg) translateZ(100px); 
+        >span{ 
+            color: white; 
+            font-size: 2rem;
+            background-color: $faint-black;
+            padding: 0.5rem;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+     }
+ }
+
+ @keyframes animate{
+     from,to{
+         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+     }
+     16%{
+         transform: rotateY(-90deg);
+     }
+     33%{
+         transform: rotateY(-90deg) rotateZ(90deg);
+     }
+     50%{
+         transform: rotateY(-180deg) rotateZ(90deg);
+     }
+     66%{
+         transform: rotateY(-270deg) rotateX(90deg);
+     }
+     83%{
+         transform: rotateX(90deg);
+     }
+ }

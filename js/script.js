@@ -1,34 +1,52 @@
-let menuBtn = document.querySelector('.menu-btn');
-let menuBtn__burger = document.querySelector('.menu-btn__burger');
-let nav = document.querySelector('.nav');
-let home_logo = document.querySelector('.home-logo');
-let social_icons = document.querySelector('.social-icons');
+const actitivities = document.querySelector('#skills-header');
+const pos = actitivities.getBoundingClientRect();
+const activitiesPos = Math.ceil(pos.y);
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
 
-let showMenu = false;
+window.addEventListener('scroll', () => {
+  const scrollPos = Math.ceil(window.scrollY);
+  if (scrollPos >= activitiesPos) {
+    count();
+  }
+});
 
-menuBtn.addEventListener('click', toggleOpen);
+const count = () => {
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
 
-function toggleOpen(){
-    if(!showMenu){
-        menuBtn__burger.classList.add('open');
-        nav.classList.add('open');
-        if(home_logo){
-            home_logo.classList.add('open');
-        }
-        if(social_icons){
-             social_icons.classList.add('open');
-        }
-        showMenu = true;
-    }else if(showMenu){
-        menuBtn__burger.classList.remove('open');
-        nav.classList.remove('open');
-        if(home_logo){
-            home_logo.classList.remove('open');
-        }
-        if(social_icons){
-            social_icons.classList.remove('open');
-        }
-        showMenu = false;
-    }
-    
+      const inc = target / speed;
+
+      if (count < target) {
+        counter.innerText = count + inc;
+        setTimeout(updateCount, 10);
+      } else {
+        count.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+};
+
+const mobile_menu_burger = document.querySelector('.mobile-nav__menu');
+mobile_menu_burger.addEventListener('click', toggleMenu);
+const nav = document.querySelector('.nav');
+const nav_items = document.querySelectorAll('.nav__item');
+nav_items.forEach((nav_item) => {
+  nav_item.addEventListener('click', toggleMenu);
+});
+
+nav_item.addeventListener('click', toggleMenu);
+
+function toggleMenu() {
+  if (mobile_menu_burger.classList.contains('open')) {
+    mobile_menu_burger.classList.remove('open');
+    nav.classList.remove('open');
+  } else {
+    mobile_menu_burger.classList.add('open');
+    nav.classList.add('open');
+  }
 }
