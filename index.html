@@ -98,21 +98,21 @@
                 </div>
             </div>
             <div class="about-skills__activities">
-                <h2>My activities</h2>
+                <h2>Some activities</h2>
                 <div class="about-skills__activities__container">
                     <div>
                         <i class="fas fa-code-branch fa-2x"></i>
-                        <div class="counter" data-target='60000'>0</div>
+                        <div class="counter" data-target='273'>0</div>
                         <h3>Git commits</h3>
                     </div>
                     <div>
                         <i class="fas fa-at fa-2x"></i>
-                        <div class="counter" data-target='15000'>0</div>
+                        <div class="counter" data-target='29'>0</div>
                         <h3>Sass mixins</h3>
                     </div>
                     <div>
                         <i class="fas fa-recycle fa-2x"></i>
-                        <div class="counter" data-target='9000'>0</div>
+                        <div class="counter" data-target='35'>0</div>
                         <h3>React reusable components</h3>
                     </div>
                 </div>
@@ -146,10 +146,12 @@
                             <i class="fas fa-eye"></i>
                             <span>Visit</span>
                         </a>
-                            <i class="fas fa-eye"></i>
-                            <span>Visit</span>
                         </a>
-                        <a href="">
+                        <a 
+                            href="https://github.com/SelloFotoyi/oasis"
+                            rel='noopener noreferrer'
+                            target='_blank'
+                            >
                             <i class="fab fa-github"></i>
                             <span>Code</span>
                         </a>
@@ -177,10 +179,12 @@
                             <i class="fas fa-eye"></i>
                             <span>Visit</span>
                         </a>
-                            <i class="fas fa-eye"></i>
-                            <span>Visit</span>
                         </a>
-                        <a href="">
+                        <a 
+                            href="https://github.com/SelloFotoyi/recipe-me"
+                            rel='noopener noreferrer'
+                            target='_blank'
+                            >
                             <i class="fab fa-github"></i>
                             <span>Code</span>
                         </a>
@@ -208,7 +212,11 @@
                             <i class="fas fa-eye"></i>
                             <span>Visit</span>
                         </a>
-                        <a href="">
+                        <a 
+                            href="https://github.com/SelloFotoyi/npo/tree/master"
+                            rel='noopener noreferrer'
+                            target='_blank'
+                            >
                             <i class="fab fa-github"></i>
                             <span>Code</span>
                         </a>
@@ -228,10 +236,10 @@
             </p>
         </div>
         <div class="contacts-options">
-            <form class="form" method="POST" data-netlify="true">
-                <input type="text" placeholder="Your name" required>
-                <input type="text" placeholder="Your email address" required>
-                <textarea placeholder="Your message" required class="form__message"></textarea>
+            <form name='profile-form' class="form" method="POST" data-netlify="true">
+                <input type="text" placeholder="Your name" required name='name'>
+                <input type="text" placeholder="Your email address" required name='email'>
+                <textarea placeholder="Your message" required class="form__message" name="message"></textarea>
                 <button type="submit" class="form__btn">submit</button>
             </form>
             <div class="socials">

@@ -187,7 +187,6 @@
 }
 
 .home-titles {
-  border-top: 3px solid rgba(0, 0, 0, 0.75);
   padding: 0.5rem;
   height: 2.5rem;
   width: 80%;
@@ -891,10 +890,9 @@
     width: 95%;
     flex-direction: row;
     justify-content: space-between;
-    height: 20rem;
+    height: 25rem;
   }
   .contacts-options .form {
-    font-size: 1.5rem;
     margin: auto 1rem;
     height: 100%;
     border: none;
@@ -902,6 +900,7 @@
   }
   .contacts-options .form input {
     width: 70%;
+    font-size: 1.5rem;
   }
   .contacts-options .form__message {
     width: 70%;
