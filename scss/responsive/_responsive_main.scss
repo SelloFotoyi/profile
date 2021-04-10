@@ -1,4 +1,14 @@
 @import './home'
         ,'./about'
-        , './contacts';
+        , './contacts'
+        , './nav';
+
+@include media-desktop__sm { 
+    .projects{ 
+        &-container{ 
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-auto-rows: 25rem;
+        }
+    }
+}
 

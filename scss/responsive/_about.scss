@@ -28,10 +28,16 @@
              }
          }
      }
-
      .wrapper{
         margin: 5% auto; 
      }
+ }
 
-
+ @include media-desktop__sm { 
+     .about{ 
+         &-skills{ 
+             padding-top:3.5rem; 
+             flex-direction: row;
+         }
+     }
  }
