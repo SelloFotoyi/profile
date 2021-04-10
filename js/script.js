@@ -2,7 +2,7 @@ const actitivities = document.querySelector('#skills-header');
 const pos = actitivities.getBoundingClientRect();
 const activitiesPos = Math.ceil(pos.y);
 const counters = document.querySelectorAll('.counter');
-const speed = 200;
+const speed = 1000;
 
 window.addEventListener('scroll', () => {
   const scrollPos = Math.ceil(window.scrollY);

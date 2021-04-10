@@ -6,12 +6,17 @@
         , './contacts'
         , './responsive/responsive_main';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     max-width: 100%;
     height: 100%;
     overflow-x: hidden;
     font-family: "Dosis", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .header{
     width: 100%; 
     position: relative; 
@@ -20,4 +25,23 @@ body{
  @include header-style;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $faint-black; 
+  border-radius: 10px;
+  width: 80%;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: $theme_secondary; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($theme_secondary,25%); 
+}
