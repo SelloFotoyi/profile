@@ -1,0 +1,37 @@
+ @include media-tablet {
+     .about{ 
+         &-header{ 
+             flex-direction: row;
+             height: 40vh;
+             &__info{ 
+                 flex-basis: 30%;
+                 align-self: center;
+                 line-height: 1.5;
+                 font-size: 1.25rem;
+             }
+         }
+         &-skills{ 
+             h2{ 
+                 font-size: 2.5rem ;
+             }
+             &__activities{ 
+                 &__container{ 
+                     flex-direction: row;
+                     justify-content: space-between;
+                     align-items: flex-start;
+                     
+                     >div{
+                         flex-basis: 35%;
+                         height: 100%;
+                     }
+                 }
+             }
+         }
+     }
+
+     .wrapper{
+        margin: 5% auto; 
+     }
+
+
+ }

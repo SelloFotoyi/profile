@@ -1,0 +1,19 @@
+ @include media-tablet {
+    .home{
+        &-sq1,&-sq2{ 
+            width:250px; 
+            height: 250px;
+        }
+        &-text{ 
+            width: 75%;
+            font-size: 3rem;
+        }
+    }
+    .home-titles{ 
+        div{
+            h1{
+                font-size: 1.75rem;
+            }
+        }
+    }
+ }

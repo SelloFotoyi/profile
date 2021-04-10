@@ -1,0 +1,13 @@
+@include media-tablet { 
+    .contacts{ 
+        &-header{ 
+            height: 30rem; 
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .contacts-options{ 
+        width: 70%;
+    }
+}
