@@ -39,8 +39,6 @@ nav_items.forEach((nav_item) => {
   nav_item.addEventListener('click', toggleMenu);
 });
 
-nav_item.addeventListener('click', toggleMenu);
-
 function toggleMenu() {
   if (mobile_menu_burger.classList.contains('open')) {
     mobile_menu_burger.classList.remove('open');

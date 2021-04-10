@@ -17,3 +17,9 @@
         }
     }
  }
+
+ @include media-desktop__sm {
+     .home-titles{ 
+         width: 45%;
+     }
+ }
