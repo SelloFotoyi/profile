@@ -36,8 +36,10 @@
  @include media-desktop__sm { 
      .about{ 
          &-skills{ 
+             width: 90%;
              padding-top:3.5rem; 
              flex-direction: row;
+             justify-content: space-around;
          }
      }
  }

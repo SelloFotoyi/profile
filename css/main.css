@@ -836,6 +836,23 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .home-sq1, .home-sq2 {
+    width: 300px;
+    height: 300px;
+  }
+  .home-sq1 {
+    top: 10%;
+  }
+  .home-text {
+    width: 75%;
+    font-size: 3.5rem;
+  }
+  .home-titles div h1 {
+    font-size: 2.25rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-header {
     flex-direction: row;
@@ -866,8 +883,10 @@
 
 @media screen and (min-width: 1024px) {
   .about-skills {
+    width: 90%;
     padding-top: 3.5rem;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 
